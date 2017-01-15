@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Java Dosya Okuma/Yazma İşlemleri</title>
+  <meta name="description" content="Mehmet ARI - Junior Java Developer, Junior Software Engineer">
+  <meta name="author" content="Mehmet ARI">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mehmet ARI">
+  <meta name="twitter:description" content="Mehmet ARI - Junior Java Developer, Junior Software Engineer">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mehmet ARI">
+  <meta property="og:description" content="Mehmet ARI - Junior Java Developer, Junior Software Engineer">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//2015/java-dosya-islemleri/">
+  <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Mehmet ARI">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Mehmet ARI</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Mehmet ARI - Junior Java Developer, Junior Software Engineer</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Mehmet ARI blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/memojja" title="@memojja on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/memojja" title="memojja on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/arimehmet" title="arimehmet on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/memojja" title="memojja on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:memojja1907@gmail.com" title="Email memojja1907@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="17 Nov 2015" class="post-meta__date date">17 Nov 2015</time> &#8226; <span class="post-meta__tags">on </span>
+    </div>
+    <h1 class="post-title">Java Dosya Okuma/Yazma İşlemleri</h1>
+  </header>
+
+  <section class="post">
+    <p>Merhaba arkadaslar bugun dosyada okuma/yazma işlemi nasıl yapılır basitce onu göstericeğim.Text olur normal dosya olur network olur hatta database bile olablir okuyacağımız kaynak.
+Öncelikle Stream in ne oldugundan bahsedelim.Kaynak ve uygulama arasında bir bağlantı oluşturulur.Bunun üzerinden dosyaya veri yazar yada okuruz.İşte bunu streamler üzerinden yaparız.2 ye ayırabiliriz JAVA da dosya okumayı.(Bunlar birer interfacedir.Javadaki herşey birer interface aslinda)</p>
+
+<ul>
+  <li>
+    <p><strong>Reader ve Writer Siniflari :</strong> Reader ve Writer Sınıfları ile karakter bazlı işlem yapabiliriz.Gidipte bir resim dosyası okuyamayız.Okuruz ama otomatik texte çevirir yani bir işe yaramaz.İşte onu byte bazlı yapmamız lazım yani Stream Sınıfları ile.Örnegin bir web sitemiz var log tutmamız lazım işte o zaman bu sınıfı kullanabiliriz.</p>
+  </li>
+  <li>
+    <p><strong>Stream Sınıfları :</strong> Stream Sınıfları ile ise byte bazlı işlemleri gerçekleştirebiliriz.Örnegin bir klasör kopyalicaz veya resim kayıt etmemiz lazım bunlar stream sınıfları ile gerçekleştirilir.</p>
+  </li>
+</ul>
+
+<h5 id="reader-ve-writer-siniflari"><strong>Reader ve Writer Siniflari</strong></h5>
+
+<p>Dosya okuma ve yazmada temel mantık sirasiyla;</p>
+
+<p>Önce bir dosya açılır.Sonrasında okuma yapılacaksa okunur,yazma işlemi gerçekleştirilecekse o işlem gerçekleştirilir ve iş bittikten sonra kapatılır.Aslında bukadar basit.</p>
+
+<p>Ozaman uygulama ile bunu pekiştirelim:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JavaIO</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+
+		<span class="n">File</span> <span class="n">dosya</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/home/memojja/İndirilenler/deneme.txt"</span><span class="o">);</span>
+		<span class="k">if</span> <span class="o">(!</span><span class="n">dosya</span><span class="o">.</span><span class="na">exists</span><span class="o">())</span> <span class="c1">//dosya yok ise ;</span>
+			<span class="n">dosya</span><span class="o">.</span><span class="na">createNewFile</span><span class="o">();</span> <span class="c1">//oluştur.</span>
+
+		<span class="n">BufferedWriter</span> <span class="n">yazici</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedWriter</span><span class="o">(</span><span class="k">new</span> <span class="n">FileWriter</span><span class="o">(</span><span class="n">dosya</span><span class="o">));</span>
+		<span class="n">yazici</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="s">"Mehmet ARI n bu yazdığım alt satırda gözükecek"</span><span class="o">);</span>
+		<span class="n">yazici</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+		<span class="n">yazici</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+	<span class="o">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileWriter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JavaIO</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+
+		<span class="n">String</span> <span class="n">deger</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+		<span class="n">File</span> <span class="n">dosya</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/home/memojja/İndirilenler/deneme.txt"</span><span class="o">);</span>
+
+		<span class="n">BufferedReader</span> <span class="n">okuyucu</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="n">dosya</span><span class="o">));</span>
+
+		<span class="k">while</span> <span class="o">((</span><span class="n">deger</span> <span class="o">=</span> <span class="n">okuyucu</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">deger</span><span class="o">);</span>
+		        <span class="n">okuyucu</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+	<span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<h5 id="stream-snflar"><strong>Stream Sınıfları</strong></h5>
+
+<p>Ufak bi resim kopyalama işlemi yapalım.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.io.BufferedInputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedOutputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileInputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileNotFoundException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.FileOutputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JAVAStreamYazma</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+		<span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+		<span class="n">File</span> <span class="n">resim</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/home/memojja/Masaüstü/android.png"</span><span class="o">);</span>
+		<span class="n">File</span> <span class="n">resim2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/home/memojja/Masaüstü/android2.png"</span><span class="o">);</span>
+
+		<span class="n">BufferedInputStream</span> <span class="n">okuyucu</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedInputStream</span><span class="o">(</span>
+				<span class="k">new</span> <span class="nf">FileInputStream</span><span class="o">(</span><span class="n">resim</span><span class="o">));</span>
+		<span class="n">BufferedOutputStream</span> <span class="n">yazici</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedOutputStream</span><span class="o">(</span>
+				<span class="k">new</span> <span class="nf">FileOutputStream</span><span class="o">(</span><span class="n">resim2</span><span class="o">));</span>
+		<span class="k">while</span> <span class="o">((</span><span class="n">a</span> <span class="o">=</span> <span class="n">okuyucu</span><span class="o">.</span><span class="na">read</span><span class="o">())</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+			<span class="kt">byte</span> <span class="n">girdi</span> <span class="o">=</span> <span class="o">(</span><span class="kt">byte</span><span class="o">)</span> <span class="n">a</span><span class="o">;</span>
+			<span class="n">yazici</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">girdi</span><span class="o">);</span>
+		<span class="o">}</span>
+
+		<span class="n">yazici</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+		<span class="n">yazici</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+		<span class="n">okuyucu</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"kopyalandı"</span><span class="o">);</span>
+	<span class="o">}</span>
+
+ </code></pre></figure>
+
+<p>Yazımı burada sonlandırıyorum arkadaslar, sonraki yazilarda bu okuma yazma islemlerini “Socket Programlamada” bir uygulamasini yapacagim.Umarim faydali olmustur.</p>
+
+<p>Mutlu ve esen kalın. :)</p>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2017 Mehmet ARI. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+    </div>
+  </body>
+</html>
