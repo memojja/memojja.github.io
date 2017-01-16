@@ -3,6 +3,7 @@ layout: post
 title:  "Java Dosya Okuma/Yazma İşlemleri"
 date:   2015-11-17 16:16:01 -0600
 categories: Java
+tags: Java
 ---
 
 Merhaba arkadaslar bugun dosyada okuma/yazma işlemi nasıl yapılır basitce onu göstericeğim.Text olur normal dosya olur network olur hatta database bile olablir okuyacağımız kaynak.

@@ -3,6 +3,7 @@ layout: post
 title:  "Linux bilgi edinme komutları"
 date:   2015-11-17 16:16:01 -0600
 categories: Linux
+tags: Linux
 ---
 
 – id [kullanıcı_ismi] = Kullanıcının kimligini verir.
