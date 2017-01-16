@@ -1,7 +1,7 @@
 # Site settings
 title: Mehmet ARI
-description: 'Mehmet ARI - Junior Software Engineer'
-url: 'http://arimehmet.github.io'
+description: 'Junior Software Engineer'
+url: 'http://arimehmet.com'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
@@ -39,4 +39,3 @@ gems:
  - jekyll-paginate
  - jemoji
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
-
