@@ -5,7 +5,11 @@ date:   2016-07-31 16:16:01 -0600
 categories: Java
 tags: Java Spring
 ---
-![](../../images/tymleaf.png){: .resiim }
+
+
+
+
+
 
 Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.**Tyhmeleaf** açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken ~~JSP~~ yerine **tyhmeleaf** tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;
 

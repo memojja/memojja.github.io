@@ -5,15 +5,13 @@
     <description>Mehmet ARI - Junior Software Engineer</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Jan 2017 21:19:44 +0300</pubDate>
-    <lastBuildDate>Mon, 16 Jan 2017 21:19:44 +0300</lastBuildDate>
+    <pubDate>Mon, 16 Jan 2017 21:22:08 +0300</pubDate>
+    <lastBuildDate>Mon, 16 Jan 2017 21:22:08 +0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Tyhmeleaf Expression</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/tymleaf.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.&lt;strong&gt;Tyhmeleaf&lt;/strong&gt; açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken &lt;del&gt;JSP&lt;/del&gt; yerine &lt;strong&gt;tyhmeleaf&lt;/strong&gt; tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;&lt;/p&gt;
+        <description>&lt;p&gt;Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.&lt;strong&gt;Tyhmeleaf&lt;/strong&gt; açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken &lt;del&gt;JSP&lt;/del&gt; yerine &lt;strong&gt;tyhmeleaf&lt;/strong&gt; tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1-Variable Expression ${…} :&lt;/strong&gt; Context üzerine bind edilmis degiskenlere erişimde kullanılır.Örnekler;&lt;/p&gt;
 
