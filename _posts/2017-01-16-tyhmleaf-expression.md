@@ -16,13 +16,13 @@ Merhaba arkadaslar bugun bugun tymleafden bahsedecegim.Tyhmeleaf açık kaynak b
 <span th:text="${person[0].name}">Mehmet ARI</span>
 <span th:text="${person.getName()}">Mehmet ARI</span>
 
-{% endhightlight %}
+{% endhighlight %}
 
 _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz yardımcı objeler mevcut.Bunlar; lists,calendar,maps,locale,dates gibi objeler._
 
 {% highlight java %}
 <span th:text="${#dates.day}"> </span>
-{% endhightlight %}
+{% endhighlight %}
 
 **2-Selection Variable Expression :**
 {% highlight java %}
@@ -34,7 +34,7 @@ _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz ya
    <p>Univercity: <span th:text="* {Univercity}">Karabük Üni</span>.</p>
 </div>
 
-{% endhightlight %}
+{% endhighlight %}
 
 **3-Message Expression #{…} :** Properties dosyasında tanımladığınız değişkenleri basmamızı sağlar.
 
@@ -46,7 +46,7 @@ _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz ya
 <a href="fatura.html" th:href="@{/fatura/(faturaId=${f.id})}">Görüntüle</a>
 <a href="fatura.html" th:href="@{/fatura/details(faturaId=${o.id}, type='Maximum')}">Görüntüle</a>
 
-{% endhightlight %}
+{% endhighlight %}
 
 > Basit bir form örneği yapalım ;
 
@@ -71,4 +71,4 @@ _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz ya
         </table>
     </form>
 
-{% endhightlight %}
+{% endhighlight %}
