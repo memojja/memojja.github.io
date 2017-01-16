@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "JAVA – Veritabanı (JDBC)"
-date:   2015-11-17 16:16:01 -0600
+title:  "JAVA – Veritabanı"
+date:   2016-06-9 16:16:01 -0600
 categories: Java
 tags: Java
 ---
+![](../../images/jdbc.png)
 
-Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan JDBC Api sinden bahsedecegim.JDBC uygulama ile veritabanı arasında haberlesmemizi saglar.Gelin bu baglama isinin nasıl olduguna bakalım;
+Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan **JDBC Api** sinden bahsedecegim.JDBC uygulama ile veritabanı arasında **haberlesmemizi** saglar.Gelin bu baglama isinin nasıl olduguna bakalım;
 
 Veritabanına bağlanıp işlemlerimizi yapabilmemiz için 4 adıma ihtiyacımız var diyebiliriz.
 
@@ -15,7 +16,7 @@ Veritabanına bağlanıp işlemlerimizi yapabilmemiz için 4 adıma ihtiyacımı
 * Gelen veriyi al ve işle.
 * Sonucu döndür ve bağlantıyı sonlandır.
 
-* Baglantı alma işlemi : JDBC api içerisindeki DriverManager sınıfındaki getConnection() methodu kullanılarak yapılmaktadır.Bu method paremetre olarak veritabanı urlsini,kullanıcı adını ve şifresini alıp geriye Connection nesnesi döndürmektedir.
+**Baglantı alma işlemi :** JDBC api içerisindeki **DriverManager** sınıfındaki **getConnection()** methodu kullanılarak yapılmaktadır.Bu method paremetre olarak veritabanı urlsini,kullanıcı adını ve şifresini alıp geriye **Connection** nesnesi döndürmektedir.
 
 {% highlight java %}
 
@@ -25,7 +26,7 @@ Connection conn = DriverManager.getConection(DB_URL,USERNAME,PW);
 
 _java.sql sınıflarının import edildiğinden emin olun.Veri tabanı baglantımız şuanda gerçekleşti._
 
-* Statement nesnesi oluşturup executeQuery() methoduna sql kodumuzu paremetre olarak göndermemiz gerekmekte.Statement nesnesi connecion nesnesinden oluşturulmaktedır.Zaten yukarıda hali hazırda getConnection() methodundan dönen connection nesnemiz var.JDBC sorgu çalıştırmak için özel ifadeler kullanılır.Statement,PreparedStatement ve CallableStatement.
+**Statement nesnesi** oluşturup **executeQuery()** methoduna sql kodumuzu paremetre olarak göndermemiz gerekmekte.Statement nesnesi **connecion** nesnesinden oluşturulmaktedır.Zaten yukarıda hali hazırda getConnection() methodundan dönen connection nesnemiz var.JDBC sorgu çalıştırmak için özel ifadeler kullanılır.**Statement**,**PreparedStatement** ve **CallableStatement**.
 
 {% highlight java %}
 
@@ -34,7 +35,7 @@ ResulSet results = stm.executeQuery("Select * from user");
 
 {% endhighlight %}
 
-* executeQuery() methodu geriye sorgulama sonuçlarını içeren ResultSet nesnesi döndürecektir.Bu resultset nesnesini satır ve sutundan oluşan tablolar gibi düşünebiliriz.Ve bu verileri içerisinde getString(“sutunADi”) ile ayıklayıp işlemimizi gerçekleştirebiliriz.
+**executeQuery()** methodu geriye sorgulama sonuçlarını içeren **ResultSet** nesnesi döndürecektir.Bu resultset nesnesini satır ve sutundan oluşan tablolar gibi düşünebiliriz.Ve bu verileri içerisinde getString(“sutunADi”) methodunu kullanarak ayiklama islemini gerceklestirebiliriz.
 
 {% highlight java %}
 
@@ -46,7 +47,7 @@ ResulSet results = stm.executeQuery("Select * from user");
 
 {% endhighlight %}
 
-* Ve işlemimiz bittiği için veritabanını kapatmamız gerekmekte.
+**Son olarak** işlemimiz bittiği için veritabanını kapatmamız gerekmekte.
 
 {% highlight java %}
 conn.close();
@@ -58,4 +59,8 @@ _Özet olarak kısaca birde bu kullandıgımız sınıfların/interfacelerin ne 
 
 **Connecion Interface :** Veritabanı bağlantı bilgilerinin tutulmasını sağlar.Veri tabanına veri girilmesi sonuçların alınması vs. bu interface i kullanan sınıflar aracılıgı ile yapılır.
 
-**ResultSet Interface :**Statement üzerinde çalışan SQL sorgusu geriye resultset nesnesi dönecektir.Bu nesneyi işleyerek verilerimizi kullanabiliriz.
+**ResultSet Interface :** Statement üzerinde çalışan SQL sorgusu geriye resultset nesnesi dönecektir.Bu nesneyi işleyerek verilerimizi kullanabiliriz.
+
+Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.
+
+Mutlu ve esen kalın :) .

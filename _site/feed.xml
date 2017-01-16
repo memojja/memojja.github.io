@@ -5,13 +5,15 @@
     <description>Mehmet ARI - Junior Software Engineer</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Jan 2017 13:39:33 +0300</pubDate>
-    <lastBuildDate>Mon, 16 Jan 2017 13:39:33 +0300</lastBuildDate>
+    <pubDate>Mon, 16 Jan 2017 20:36:49 +0300</pubDate>
+    <lastBuildDate>Mon, 16 Jan 2017 20:36:49 +0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Tyhmeleaf Expression</title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun bugun tymleafden bahsedecegim.Tyhmeleaf açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken JSP yerine tyhmeleaf tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/tymleaf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.&lt;strong&gt;Tyhmeleaf&lt;/strong&gt; açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken &lt;del&gt;JSP&lt;/del&gt; yerine &lt;strong&gt;tyhmeleaf&lt;/strong&gt; tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1-Variable Expression ${…} :&lt;/strong&gt; Context üzerine bind edilmis degiskenlere erişimde kullanılır.Örnekler;&lt;/p&gt;
 
@@ -40,9 +42,7 @@
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fatura.html&quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;th:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{/fatura/(faturaId=${f.id})}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ö&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ü&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nt&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ü&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;le&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fatura.html&quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;th:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{/fatura/details(faturaId=${o.id}, type='Maximum')}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ö&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ü&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nt&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;ü&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;le&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Basit bir form örneği yapalım ;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Gelin ogrendiklerimizle basit bir form örneği yapalım ;&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;th:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@{/faturalar}&quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;th:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;${fatura}&quot;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;th:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -62,10 +62,13 @@
         &lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.&lt;/p&gt;
+
+&lt;p&gt;Mutlu ve esen kalın :) .&lt;/p&gt;
 </description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/tyhmleaf-expression/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/tyhmleaf-expression/</guid>
+        <pubDate>Mon, 01 Aug 2016 01:16:01 +0300</pubDate>
+        <link>http://localhost:4000//2016/tyhmleaf-expression/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/tyhmleaf-expression/</guid>
         
         <category>Java</category>
         
@@ -77,8 +80,477 @@
       </item>
     
       <item>
+        <title>JUnit Temel Anatasyonlar </title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/junit.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun Javada test yazma kutuphanesi olan &lt;strong&gt;JUnit&lt;/strong&gt; deki temel anatasyonlardan bahsedecegim.Projelerde birim testi yazmak önemlidir.Cünkü kodumuz daha ürün olmadan sınanmış ve hata payı en düşük olacak şekilde yapılmıs olur.Daha temiz bir kod yazmış oluruz.Mesela test yazarken bazı methodları gereksız yere birden fazla yazdıgımızı görüp refaktoring yapmaya başlarız.Yani test yazmak dolaylı yoldanda bir çok rahatlık sağlamakta bize.Bi bakima testlerimize bakarak yazdigimiz kodun ne is yaptiginida anlayabiliriz bizim icin bir dokumantasyonda olmus olur .Simdi gelin en temel test anatasyonlarina bir goz atalim;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;@BeforeClass :&lt;/strong&gt; İlk calisir ve her sınıf için birkere çağırılır.Oluşturulan test methodu static olmalı.Çünkü arkaplanda @BeforeClass içerisinde &lt;strong&gt;static&lt;/strong&gt; değişkenler vardır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@AfterClass :&lt;/strong&gt; En son çalısır ve &lt;strong&gt;@BeforeClass&lt;/strong&gt; gibi birkere çalışır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@before :&lt;/strong&gt; Her test methodundan önce bir kere çalısır.Sırayla calisir.Bir nevi ön koşul.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@after :&lt;/strong&gt; Her test methodundan sonra çalısır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@test :&lt;/strong&gt; Methodumuzun bir test methodu oldugunu isaret eder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;ornek-uzerinden-pekistirelim-&quot;&gt;&lt;strong&gt;Ornek uzerinden pekistirelim ;&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;em&gt;Bu ornegimiz bir projedeki veri tabaninin testi olsun;&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;@test :&lt;/strong&gt; Methodumuzun bir test methodu oldugunu isaret eder.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@beforeclass :&lt;/strong&gt; Veri tabanını ayagı kaldırır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@before :&lt;/strong&gt; Oldugu method veri tabanı açar.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@after :&lt;/strong&gt; Veri tabanını kapatır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@Ignore :&lt;/strong&gt; Test edilmeden atlamasini saglar.Mesela hatayı çözemedik sonra bakarız dedik ama projenın calısması lazım @Ignore(“not sportted”)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;@afterbefore :&lt;/strong&gt; Veri tabanini komple sonlandırır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.&lt;/p&gt;
+
+&lt;p&gt;Mutlu ve esen kalın :) .&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Jul 2016 01:16:01 +0300</pubDate>
+        <link>http://localhost:4000//2016/junit/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/junit/</guid>
+        
+        <category>Java</category>
+        
+        
+        <category>Java</category>
+        
+      </item>
+    
+      <item>
+        <title>SOLID Principles I</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/solid.-jenga.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun 2 seriden olusucak olan SOLID prensiblerinin ilk serisini bildigim kadariyla anlatmaya calisicagim.
+SOLID dediğimiz ( &lt;strong&gt;Single responsibility&lt;/strong&gt; , &lt;strong&gt;Open-closed&lt;/strong&gt; , &lt;strong&gt;Liskov substitution&lt;/strong&gt; , &lt;strong&gt;Interface segregation&lt;/strong&gt; ve &lt;strong&gt;Dependency inversion&lt;/strong&gt; ) yazılım tasarım prensibleri için kullanılan bir kısaltmadır.TDD(Tes Driven Development) un vaz geçilmezidir.Yani bu prensibi kullandığımızda geliştirmesi ve bakımı en kolay yazılımı yapbilmemiz daha muhtemeldir.&lt;/p&gt;
+
+&lt;h4 id=&quot;s-ingle-responsibility-principle&quot;&gt;&lt;strong&gt;S&lt;/strong&gt; ingle Responsibility Principle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Her yazılım biriminin (sınıf, nesne, metot) &lt;strong&gt;tek bir sorumluluğu&lt;/strong&gt; olmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;o-penclosed-principle&quot;&gt;&lt;strong&gt;O&lt;/strong&gt; pen/Closed Principle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Yazılım birimleri &lt;strong&gt;geliştirilmeye açık&lt;/strong&gt;, &lt;strong&gt;değişikliğe kapalı&lt;/strong&gt; olmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;l-iskovs-substitution-principle&quot;&gt;&lt;strong&gt;L&lt;/strong&gt; iskov’s Substitution Principle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Alt sınıflardan oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde &lt;strong&gt;aynı davranışı&lt;/strong&gt; göstermek zorundadırlar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;i-nterface-segregation-principle&quot;&gt;&lt;strong&gt;I&lt;/strong&gt; nterface Segregation Principle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Herşeyi ihtiva eden interface sınıflar yerine &lt;strong&gt;belli bir işlemi&lt;/strong&gt; yapan &lt;strong&gt;interface&lt;/strong&gt; sınıflar oluşturulmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;d-ependency-inversion-principle&quot;&gt;&lt;strong&gt;D&lt;/strong&gt; ependency Inversion Principle&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bağımlılıklar &lt;strong&gt;soyut sınıflara&lt;/strong&gt; doğru olmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;single-responsibility-principle&quot;&gt;&lt;strong&gt;Single Responsibility Principle&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Türkce karşılıgına birebir örtüşüyor bu prensip aslına tek sorumluluk prensibi.Yani her yazılım biriminin(class,method..) tek bir sorumlulugu olmasi gerekir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/single1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki gibi bir Customer sınıfımızı incelediğimizde single responsibility ilkesine uymadığı bariz ortada.Bütün iş tek bir sınıfa yüklenmiş.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/single2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki customer sınıfının işini faklı sınıflara ayırarak esnek bir yapi olusturduk.Bu yapida tam olarak single responsibility ilkesine uymaktadir.&lt;/p&gt;
+
+&lt;h4 id=&quot;open-closed-principle&quot;&gt;&lt;strong&gt;Open Closed Principle&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Bir yazılımda değişmeyen birşey varsa o da değişimin kendisidir.Gün geçtikce her yazılıma farklı özellikler eklenerek gelişir buda developmentın bir parçasıdır zaten.Peki ilerde &lt;strong&gt;lazım olabilecek methodları&lt;/strong&gt; geliştirme sürecinde önceden yazmalımıyız? Tabiki &lt;strong&gt;hayır&lt;/strong&gt; zaten geleceği görmek neredeyse imkansız.&lt;strong&gt;Çevik süreçde&lt;/strong&gt; budur aslında yalnızca ihtiyac olanları yap geleceği hiç düşünme.Peki ne yapmalıyız? Bu çevik tasarım prensiplerini kullanarak istediğimiz bir yapıda, bakımı ve geliştirilmesi kolay bir şekilde yazabiliriz kodumuzu.İşte bu konuda &lt;strong&gt;open closed principle&lt;/strong&gt; devreye giriyor.Bu prensibi kısaca açıklarsak;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;“Programlar geliştirilmeye açık ama değiştirilmeye kapalı olmalıdır.”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Programı geliştirmek yeni methodlar eklemek anlamına geliyor.(Değiştirmek değil eklemek,eğer değiştirirsek ocp ters düşmüş oluyoruz.Çok standart olan RemoteControl – TV örneği üzerinden pekiştirmeye çalışalım bu prensibi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/open2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RemoteControl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tvOn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CDPlayer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CDPlayer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cdOn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tvOff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CDPlayer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CDPlayer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cdOff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Bu kodun &lt;strong&gt;ocp&lt;/strong&gt; uymadıgı bariz belli gibi.Nedemiştik yazılım geliştirmeye açık değiştirmeye kapalı olmalıdır.Her eklediğimiz cihazda on ve off methodlarını değiştirmemiz gerekmekte ve buda ilerde kodumuzun &lt;strong&gt;okunabilirliğini&lt;/strong&gt; ve &lt;strong&gt;esnekliğini&lt;/strong&gt; tehlike altına sokar.Ocp a göre uyarlarsak kodumuzu;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/open3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RemoteControl&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RemoteControlInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RemoteControlInterface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RemoteControl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteControlInterface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;remote&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;remote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Yukarıdaki kodda on ve off methodları değişikliğe kapalı ve geliştirmeye açıktır.Çünkü yarın birgün bir cihaz eklemeye kalktıgımızda if else gibi &lt;strong&gt;karar yapıları&lt;/strong&gt; ile uğraşmicaz veya on off methodlarımızı değiştirmicez tek yapmamız gereken RemoteControlInterface interface inden implemente etmek.&lt;/p&gt;
+
+&lt;p&gt;Arkadaslar umarim faydali olmustur kalan 3 prensibi( &lt;strong&gt;Liskov substitution&lt;/strong&gt; , &lt;strong&gt;Interface segregation&lt;/strong&gt; ve &lt;strong&gt;Dependency inversion&lt;/strong&gt; ) diger yazimda anlatmaya calisicam.&lt;/p&gt;
+
+&lt;p&gt;Mutlu ve esen kalın :) .&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Jun 2016 01:16:01 +0300</pubDate>
+        <link>http://localhost:4000//2016/solid-1/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/solid-1/</guid>
+        
+        <category>Yazilim_Muhendisligi</category>
+        
+        
+        <category>Yazilim_Muhendisligi</category>
+        
+      </item>
+    
+      <item>
+        <title>JAVA – Veritabanı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/jdbc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan &lt;strong&gt;JDBC Api&lt;/strong&gt; sinden bahsedecegim.JDBC uygulama ile veritabanı arasında &lt;strong&gt;haberlesmemizi&lt;/strong&gt; saglar.Gelin bu baglama isinin nasıl olduguna bakalım;&lt;/p&gt;
+
+&lt;p&gt;Veritabanına bağlanıp işlemlerimizi yapabilmemiz için 4 adıma ihtiyacımız var diyebiliriz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bağlantı nesnesini al ve bağlantı aç.&lt;/li&gt;
+  &lt;li&gt;Sorguyu hazırla ve ilgili yöntemi kullanarak veri tabanına gönder.(Statement)&lt;/li&gt;
+  &lt;li&gt;Gelen veriyi al ve işle.&lt;/li&gt;
+  &lt;li&gt;Sonucu döndür ve bağlantıyı sonlandır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Baglantı alma işlemi :&lt;/strong&gt; JDBC api içerisindeki &lt;strong&gt;DriverManager&lt;/strong&gt; sınıfındaki &lt;strong&gt;getConnection()&lt;/strong&gt; methodu kullanılarak yapılmaktadır.Bu method paremetre olarak veritabanı urlsini,kullanıcı adını ve şifresini alıp geriye &lt;strong&gt;Connection&lt;/strong&gt; nesnesi döndürmektedir.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DriverManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getConection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DB_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;USERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;java.sql sınıflarının import edildiğinden emin olun.Veri tabanı baglantımız şuanda gerçekleşti.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Statement nesnesi&lt;/strong&gt; oluşturup &lt;strong&gt;executeQuery()&lt;/strong&gt; methoduna sql kodumuzu paremetre olarak göndermemiz gerekmekte.Statement nesnesi &lt;strong&gt;connecion&lt;/strong&gt; nesnesinden oluşturulmaktedır.Zaten yukarıda hali hazırda getConnection() methodundan dönen connection nesnemiz var.JDBC sorgu çalıştırmak için özel ifadeler kullanılır.&lt;strong&gt;Statement&lt;/strong&gt;,&lt;strong&gt;PreparedStatement&lt;/strong&gt; ve &lt;strong&gt;CallableStatement&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Statement&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createStatement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ResulSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;executeQuery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Select * from user&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;executeQuery()&lt;/strong&gt; methodu geriye sorgulama sonuçlarını içeren &lt;strong&gt;ResultSet&lt;/strong&gt; nesnesi döndürecektir.Bu resultset nesnesini satır ve sutundan oluşan tablolar gibi düşünebiliriz.Ve bu verileri içerisinde getString(“sutunADi”) methodunu kullanarak ayiklama islemini gerceklestirebiliriz.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;okulNo&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Son olarak&lt;/strong&gt; işlemimiz bittiği için veritabanını kapatmamız gerekmekte.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Özet olarak kısaca birde bu kullandıgımız sınıfların/interfacelerin ne iş yaptıgına bakalım;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DriverManager :&lt;/strong&gt; JDBC sürücüsünün yüklenmesi ve veritabanı urlsini olarak veritabanına bağlantı kurulmasını sağlar. ( Singleton bir sınıftır. )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Connecion Interface :&lt;/strong&gt; Veritabanı bağlantı bilgilerinin tutulmasını sağlar.Veri tabanına veri girilmesi sonuçların alınması vs. bu interface i kullanan sınıflar aracılıgı ile yapılır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ResultSet Interface :&lt;/strong&gt; Statement üzerinde çalışan SQL sorgusu geriye resultset nesnesi dönecektir.Bu nesneyi işleyerek verilerimizi kullanabiliriz.&lt;/p&gt;
+
+&lt;p&gt;Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.&lt;/p&gt;
+
+&lt;p&gt;Mutlu ve esen kalın :) .&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Jun 2016 01:16:01 +0300</pubDate>
+        <link>http://localhost:4000//2016/java-veri-tabani-jdbc/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/java-veri-tabani-jdbc/</guid>
+        
+        <category>Java</category>
+        
+        
+        <category>Java</category>
+        
+      </item>
+    
+      <item>
+        <title>Spring Boot Nedir ? </title>
+        <description>&lt;p&gt;Merhaba arkadaslar bugun kisaca hic bilmeyenler icin &lt;strong&gt;Spring Boot&lt;/strong&gt;‘dan bahsedecegim.Spring Boot;
+Spring tabanlı uygulama geliştirmenın hızlı ve kolay bir şekilde yapılması amacı ile geliştirilmiş bir &lt;strong&gt;framework&lt;/strong&gt;’tür.Spring MVC deki gibi xml konfigürasyonları ile uğraşmanız gerekmez bunları arka tarafta kendisi halleder(bean tanımlamaları vs.).Konfigürasyonlar ile uğraşmadıgımız için direk &lt;strong&gt;iş mantıgına yogunlaşıp&lt;/strong&gt; projemizi hızlı bir şekilde geliştirebiliriz.
+Ve diğer web frameworklerinden farklı olarak &lt;strong&gt;main methodu&lt;/strong&gt; bulunur ve genellikle;
+&lt;strong&gt;” SpringApplication.run ”&lt;/strong&gt; methoduna devredilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/springboot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;http://start.spring.io/ adresinden basit Spring Boot projenizi oluşturup uygulama geliştirmeye başlıyabilirsiniz.&lt;/em&gt; :)&lt;/p&gt;
+
+&lt;p&gt;Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.&lt;/p&gt;
+
+&lt;p&gt;Mutlu ve esen kalın :) .&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Mar 2016 00:16:01 +0200</pubDate>
+        <link>http://localhost:4000//2016/spring-boot-nedir/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/spring-boot-nedir/</guid>
+        
+        <category>Java</category>
+        
+        <category>Spring</category>
+        
+        
+        <category>Java</category>
+        
+      </item>
+    
+      <item>
+        <title>UML Sınıf Diyagramı İlişkileri</title>
+        <description>&lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;UML&lt;/strong&gt;‘in ne oldugundan bahsedecegim.UML &lt;strong&gt;nesne tabanlı programlama&lt;/strong&gt; yapmaya başlamadan önce &lt;strong&gt;ilk adım&lt;/strong&gt; gibi düşünülebilir.Gerçek dünya nesnelerini projemize uygun olarak &lt;strong&gt;modeller&lt;/strong&gt; ve sonrasına bu modele uygun bir şekilde &lt;strong&gt;kodlamaya&lt;/strong&gt; baslariz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/animal.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki kutucuğu inceledigimizde &lt;strong&gt;Animal&lt;/strong&gt; yazısının oldugu yere sınıfın ismi ve alt kısımda 2 parçaya ayrılmıs olan kisimlarin ise ilk kısmında variable’ların sıralandıgı ikinci kısımda ise methodların sıralandıgı görülmektedir.
+Başlarındaki &lt;strong&gt;‘+’&lt;/strong&gt; veya &lt;strong&gt;‘-‘&lt;/strong&gt; ise onların &lt;strong&gt;erişim belirleyicileridir&lt;/strong&gt;.Diğer erişim belirliyicileri ise aşagıdaki gibir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;– :&lt;/strong&gt; Private&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;# :&lt;/strong&gt; Protected&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;~ :&lt;/strong&gt; Package Access&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+ :&lt;/strong&gt; Public&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Genel Kurallar :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sınıf isimleri &lt;strong&gt;bold&lt;/strong&gt; yazılmalı.Fakat olsuturucagımız sınıf &lt;strong&gt;abstract&lt;/strong&gt; ise sınıf ismi &lt;strong&gt;&lt;em&gt;italic bold&lt;/em&gt;&lt;/strong&gt; yapılmalı.&lt;/li&gt;
+  &lt;li&gt;Eğer variable veya methodumuz &lt;strong&gt;static ise&lt;/strong&gt; &lt;del&gt;altı çizili&lt;/del&gt; yapmamız gerekmektedir.numOfAnimals değişkeni gibi.&lt;/li&gt;
+  &lt;li&gt;Yukarıdaki resimde yer alan &lt;strong&gt;[1..10]&lt;/strong&gt; ve &lt;strong&gt;[*]&lt;/strong&gt; gibi ifadeler çoklulugu ifade eder.Yani kodumuzu yazarken bunları ArrayList gibi düşünebiliriz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Temel UML kavramlarından bahsettikden sonra sıra geldi asıl konumuza.Sınıfların birbiri ile ilişkilerini ifade etmek için belli başlı başlıklar var bunlar;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Dependency&lt;/strong&gt; ( Bağımlılık )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Association&lt;/strong&gt; ( Ortaklık )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aggregation&lt;/strong&gt; ( Birleştirme )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composition&lt;/strong&gt; ( Bileşim )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generalization&lt;/strong&gt; (Inheritance) ( Kalıtım )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Realization&lt;/strong&gt; ( Gerçekleşme )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/umlsinifdiyagramiiliskileri1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;../../images/umlsinifdiyagramiiliskileri2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yukarıda sınıf diyagramı ilişkileri bulunmaktadir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Association :&lt;/strong&gt; Class A ile class B &lt;strong&gt;bir aradadır&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aggregation :&lt;/strong&gt; Class A class B ye &lt;strong&gt;sahiptir&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composition :&lt;/strong&gt; Class A class B yi &lt;strong&gt;barındırır&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dependency :&lt;/strong&gt; Class A class B yi &lt;strong&gt;kullanır&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Realization :&lt;/strong&gt; class B Class A’yı &lt;strong&gt;realize&lt;/strong&gt; eder. (implements)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gelin bu bilgileri pratige dokerek kodlamaya gecelim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dependency&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Dependency line 1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Dependency line 2&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Bir sınıf bir başka sınıfın nesnesini &lt;strong&gt;local variable&lt;/strong&gt; olarak kullanıyorsa buna dependency denir.Bildiğiniz gibi bir methodun parametresi o methodun aynı zamanda local bir değişkenidir.Yani yukarıdaki örneğe bakacak olursanız A sınıfı B sınıfının nesnesini local olarak alıp kullanmaktadır. Bu yüzden bu iki sınıf arasındaki ilişkiye dependency denmektedir.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Association&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Association ortada bir sahibin olmadığı ilişkilere denir.Öğretmen ve öğrenci örneğini ele alalım.Bir öğrencinin birden fazla öğretmeni veya bir öğretmenin birden fazla ögrencisi olabilir.Dikkat edin ikisi arasında bir sahiplik söz konusu değil.Bu tarz bir ilişki söz konusu ise association söz konusudur.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Ogrenci&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Ogretmen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ogretmen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ogretmen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ogretmen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ogretmen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ogretmen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Ogretmen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Yukarıdaki örneği incelersek Ogrenci sınıfı kendi methodunun parametresi ile öğretmen nesnesini kendi field ına atmakta.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dependecy ile kıyaslarsak;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dependecy’de &lt;strong&gt;instance variable(field)&lt;/strong&gt; söz konusu değildi associationda bir field söz konusu yani diyebilirizki dependecy ilişkisi daha zayıftır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aggregation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bazı nesnelerin olabilmesi için bazı nesnelerinde olması lazım.Peki nedemek bu?Örneğin bir arabamız var ve bu arabada motor,kapı,direksiyon vs birçok nesnenin olması lazım.Veya bir firmadaki takımı düşünürsek takım nesnesi birçok personel nesnelerinden oluşabilir. İşte nesnelerin bu şekildeki parça-bütün ilişkisine aggregation denmektedir. Kodlama açısından bakıcak olursak eğer ,sınıfın &lt;strong&gt;instance variable&lt;/strong&gt;’ı(field’ı) başka bir sınıfın &lt;strong&gt;nesnesiyse&lt;/strong&gt; ve herhangi bir methodun parametresi aracılığıyla bu instance variable initialize ediliyorsa buna “&lt;strong&gt;aggregation&lt;/strong&gt;” denir. Aggregation association’a göre daha güçlüdür. Dolayısıyla aggregation’a güçlü association da denir.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Aklınıza şu soru takılmış olabilir.Association ile Aggregation kodlama açısından aynı olmadımı ? Eğer association’ın yazısına geri dönecek olursanız aynı olduğunu görüceksiniz.Fakat işin temelinde ayrıştıkları noktalar var.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Association ve Aggregation Arasındaki Farklar ;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Association &lt;strong&gt;zayıf baglılıktır&lt;/strong&gt;.Aile gibi düşünebiliriz.Her aile birbirine baglıdır ama her biri aslında birer bireydir.Aileden ayrıldıgında yaşamında devam edebilir.Aggregation ise fabrika ürünleri gibi düşünebiliriz.Mesela mikrodalga içerisindeki nesneler tek basına bir işe yaramaz ama mikrodalga içerisinde birlikte çalıştıkları zaman işe yarar bir nesne ortaya çıkar.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Composition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aggregation’ının daha güçlü haline Composition denmektedir. Composition’da da &lt;strong&gt;parça-bütün&lt;/strong&gt; ilişkisi vardır, fakat parça ve bütün nesnelerinin ömürleri birbirine sıkı sıkıya bağlıdır. Birinin ölmesi/yok olması/silinmesi diğerini de öldürür/yok eder/siler. Aggregation’da birbirine kenetlenmiş bir ömür bağı yoktur. Compostion’a kod açısından bakılacak olursa bir sınıfın instance variable’ı başka bir sınıfın nesnesi ise ve tanımlanırken aynı zamanda direk initialize edilmişse buna “composition” denir.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// b field'ı direk initialize edilmekte&lt;/span&gt;
+
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Aşağıdaki her iki kod da yukarıdaki koddan görünüşte farklı görünen fakat uml ilişkisi açısından yine composition olan kodlardır.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// b field'ı direk initialize edilmekte&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doSomethingUniqueToB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// b field'ı direk initialize edilmekte&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Yani eğer bir sınıfın instance variable’ı(field’ı) local bir değişken araya girmeden direk new komutu ile initialize ediliyorsa buna “composition” denir. Eğer initialize işlemine methodun parametresi “aracılığı” girerse, yani local bir değişken araya girerse o zaman o ilişki aggregation olur.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;....&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Realization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 11 Mar 2016 00:16:01 +0200</pubDate>
+        <link>http://localhost:4000//2016/uml-iliskileri/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/uml-iliskileri/</guid>
+        
+        <category>Yazilim_Muhendisligi</category>
+        
+        
+        <category>Yazilim</category>
+        
+        <category>Muhendisligi</category>
+        
+      </item>
+    
+      <item>
+        <title>Linux bilgi edinme komutları</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/linux.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;id [kullanıcı_ismi] :&lt;/strong&gt;  Kullanıcının kimligini verir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;finger [kullanıcı_ismi] :&lt;/strong&gt;  Kullanıcı hakkında bilgi verir&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;last :&lt;/strong&gt;  Sisteme giriş yapan kullanıcıların listesini verir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;more :&lt;/strong&gt;  Uzun bilgileri sayfa sayfa okuyabilmemizi sağlar.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;uptime :&lt;/strong&gt;  Ne kadar süredir bilgisayarın açık olduğu verir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;pwd :&lt;/strong&gt;  Bulunulan dizini gösterir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;hostname :&lt;/strong&gt;  Makinanın ismini verir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;whoami :&lt;/strong&gt;  Kullanıcı adınızı verir.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;date :&lt;/strong&gt;  Sistem tarihi için.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;time :&lt;/strong&gt;  Komutun işlemini bitirme süresini belirlemek için(time -ls)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;who :&lt;/strong&gt;  Sistemde bulunan kullanıcı isimlerini verir.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 07 Feb 2016 00:16:01 +0200</pubDate>
+        <link>http://localhost:4000//2016/linux-bilgi-edinme-komutlari/</link>
+        <guid isPermaLink="true">http://localhost:4000//2016/linux-bilgi-edinme-komutlari/</guid>
+        
+        <category>Linux</category>
+        
+        
+        <category>Linux</category>
+        
+      </item>
+    
+      <item>
         <title>JAVA – Thread</title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun threadlerden bahsedecegim.Threadler bir program içerisinde birden fazla işlemin gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/thread.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;thread&lt;/strong&gt;lerden bahsedecegim.Threadler bir program içerisinde &lt;strong&gt;birden fazla işlem&lt;/strong&gt;in gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Ne yani nerelerde kullanicam ben bunu ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -87,21 +559,28 @@
 &lt;p&gt;&lt;strong&gt;Javada bir thread oluşturmanın 2 farklı yolu vardır.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Runnable interface’inden implement etmek.&lt;/li&gt;
-  &lt;li&gt;Thread sınıfından extends etmek.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Runnable&lt;/strong&gt; interface’inden implement etmek.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Thread&lt;/strong&gt; sınıfından extends etmek.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.Runnable interface oldugu için nesne olusturulmaz.Thread.start() diye başlatırız.&lt;/p&gt;
+&lt;p&gt;İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.&lt;/p&gt;
 
-&lt;p&gt;Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Runnable interface oldugu için nesne olusturulmaz.&lt;/li&gt;
+  &lt;li&gt;Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Kullanacaginiz yere gore degis tabiki ama Javada coklu kalitim mumkun olmadigindan bir kere extends etme hakkimiz var onuda thread de harcamak mantikli degil gibi.O yuzden siz thread olustururken Runnable interface ini implemente edin tabi bu benim sahsi gorusum.Gelin en onemli methodlarina bir bakalim;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;sleep() :&lt;/strong&gt; Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.
-&lt;strong&gt;isAlive() :&lt;/strong&gt; Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)
-&lt;strong&gt;isİnterrupted() :&lt;/strong&gt; Thread bekliyor mu diye kontrol eder.
-&lt;strong&gt;setPriority() :&lt;/strong&gt; Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )
-&lt;strong&gt;notify() :&lt;/strong&gt; Threadin durumunu bildirme methodu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sleep() :&lt;/strong&gt; Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;isAlive() :&lt;/strong&gt; Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;isİnterrupted() :&lt;/strong&gt; Thread bekliyor mu diye kontrol eder.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;setPriority() :&lt;/strong&gt; Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;notify() :&lt;/strong&gt; Threadin durumunu bildirme methodu.&lt;/p&gt;
 
 &lt;p&gt;Gelin ufak bir ornek uzerinden konuyu pekistirelim ;&lt;/p&gt;
 
@@ -133,11 +612,14 @@
 
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;tr.start()&lt;/strong&gt; dedigimiz anda &lt;strong&gt;run()&lt;/strong&gt; methodu tetiklendi ve threadimiz calismaya basladi.&lt;/em&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&quot;../../images/thread.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Görüldüğü üzere kafalarına göre çalışıyor.Belirli bir siralari yok.Peki bu iyi birsey mi yoksa kotu birsey mi ?
-kotu birsey peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;
-Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.&lt;/p&gt;
+Kotu birsey.Peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;&lt;/p&gt;
+
+&lt;p&gt;Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.&lt;/p&gt;
 
 &lt;p&gt;Hemen projeyi anlatıyım.BankaHesap.java adında bir sınıfımız olacak bu bizim kasamız.Birde ParaCekme.java isminde bir sınıfımız olucak bunun içerisinde bir main methodumuz bide threadımız olucak.Aynı objeden 2 kişi para çekıcek biri çektikten sonra digeri çekicek synchronized sayesinde şimdi kodumuzu inceleyelim.&lt;/p&gt;
 
@@ -218,52 +700,30 @@ Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ö
       </item>
     
       <item>
-        <title>Spring Boot Nedir ? </title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun kisaca hic bilmeyenler icin Spring Boot’dan bahsedecegim.Spring Boot;
-Spring tabanlı uygulama geliştirmenın hızlı ve kolay bir şekilde yapılması amacı ile geliştirilmiş bir framework’tür.Spring MVC deki gibi xml konfigürasyonları ile uğraşmanız gerekmez bunları arka tarafta kendisi halleder(bean tanımlamaları vs.).Konfigürasyonlar ile uğraşmadıgımız için direk iş mantıgına yogunlaşıp projemizi hızlı bir şekilde geliştirebiliriz.
-Ve diğer web frameworklerinden farklı olarak main methodu bulunur ve genellikle;
-” SpringApplication.run ” methoduna devredilir.&lt;/p&gt;
-
-&lt;p&gt;http://start.spring.io/ adresinden basit Spring Boot projenizi oluşturup uygulama geliştirmeye başlıyabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Kolay gelsin :)&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/spring-boot-nedir/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/spring-boot-nedir/</guid>
-        
-        <category>Java</category>
-        
-        <category>Spring</category>
-        
-        
-        <category>Java</category>
-        
-      </item>
-    
-      <item>
         <title>Renk Uyum Siteleri</title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun android veya web uygulamalariniz icin benimde sikca kullandigim web sitelerini paylasacagim umarim faydali olur. :)&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/renkkodlari.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;android&lt;/strong&gt; veya &lt;strong&gt;web&lt;/strong&gt; uygulamalariniz icin benimde sikca kullandigim web sitelerini paylasacagim umarim faydali olur. :)&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;http://www.pictaculous.com/ – Herhangi bir resim upload ederek resmin içinde bulunduğu renk tonlarını cikarabileceginiz guzel bir site.&lt;/li&gt;
-  &lt;li&gt;https://brandcolors.net/ – Favori android uygulamalarının renk tonlarının bulunduğu site.&lt;/li&gt;
-  &lt;li&gt;http://colrd.com/  - Ornek resimlerin ve resimlere ait renk kodlarının bulunduğu site&lt;/li&gt;
-  &lt;li&gt;http://uigradients.com/#Decent  - Gradiant sitesi&lt;/li&gt;
-  &lt;li&gt;http://www.design-seeds.com/blog/ - Ornek resimlerin ve resimlere ait renk kodlarının bulunduğu site&lt;/li&gt;
-  &lt;li&gt;http://materialuicolors.co/&lt;/li&gt;
-  &lt;li&gt;http://flatuicolors.com/&lt;/li&gt;
-  &lt;li&gt;http://www.colorhunt.co/&lt;/li&gt;
-  &lt;li&gt;http://www.pictaculous.com/&lt;/li&gt;
-  &lt;li&gt;http://brandcolors.net/&lt;/li&gt;
-  &lt;li&gt;http://colrd.com/&lt;/li&gt;
-  &lt;li&gt;http://www.colourlovers.com/&lt;/li&gt;
-  &lt;li&gt;http://uigradients.com/&lt;/li&gt;
-  &lt;li&gt;http://www.google.com/design/spec/style/color.html…&lt;/li&gt;
-  &lt;li&gt;https://coolors.co/&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.pictaculous.com/&quot;&gt;pictaculous&lt;/a&gt;&lt;/strong&gt; – Herhangi bir resim upload ederek resmin içinde bulunduğu renk tonlarını cikarabileceginiz guzel bir site.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://brandcolors.net/&quot;&gt;brandcolors&lt;/a&gt;&lt;/strong&gt; – Favori android uygulamalarının renk tonlarının bulunduğu site.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://colrd.com/&quot;&gt;colrd.com&lt;/a&gt;&lt;/strong&gt;  - Ornek resimlerin ve resimlere ait renk kodlarının bulunduğu site&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://uigradients.com/#Decent&quot;&gt;uigradients&lt;/a&gt;&lt;/strong&gt;  - Gradiant sitesi&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.design-seeds.com/blog/&quot;&gt;design-seeds&lt;/a&gt;&lt;/strong&gt; - Ornek resimlerin ve resimlere ait renk kodlarının bulunduğu site&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://materialuicolors.co/&quot;&gt;materialuicolors&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://flatuicolors.com/&quot;&gt;flatuicolors&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.colorhunt.co/&quot;&gt;colorhunt&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.pictaculous.com/&quot;&gt;pictaculous&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://brandcolors.net/&quot;&gt;brandcolors&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://colrd.com/&quot;&gt;colrd&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.colourlovers.com/&quot;&gt;colourlovers&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://uigradients.com/&quot;&gt;uigradients&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.google.com/design/spec/style/color.html&quot;&gt;google.com/design&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://coolors.co/&quot;&gt;coolors&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
+        <pubDate>Mon, 02 Nov 2015 01:16:01 +0300</pubDate>
         <link>http://localhost:4000//2015/renk-uyum-siteleri/</link>
         <guid isPermaLink="true">http://localhost:4000//2015/renk-uyum-siteleri/</guid>
         
@@ -271,126 +731,6 @@ Ve diğer web frameworklerinden farklı olarak main methodu bulunur ve genellikl
         
         
         <category>Android</category>
-        
-      </item>
-    
-      <item>
-        <title>Linux bilgi edinme komutları</title>
-        <description>&lt;p&gt;– id [kullanıcı_ismi] = Kullanıcının kimligini verir.
-– finger [kullanıcı_ismi] = Kullanıcı hakkında bilgi verir
-– last = Sisteme giriş yapan kullanıcıların listesini verir.
-– more = Uzun bilgileri sayfa sayfa okuyabilmemizi sağlar.
-– uptime = Ne kadar süredir bilgisayarın açık olduğu verir.
-– pwd = Bulunulan dizini gösterir.
-– hostname = Makinanın ismini verir.
-– whoami = Kullanıcı adınızı verir.
-– date = Sistem tarihi için.
-– time = Komutun işlemini bitirme süresini belirlemek için(time -ls)
-– who = Sistemde bulunan kullanıcı isimlerini verir.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/linux-bilgi-edinme-komutlari/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/linux-bilgi-edinme-komutlari/</guid>
-        
-        <category>Linux</category>
-        
-        
-        <category>Linux</category>
-        
-      </item>
-    
-      <item>
-        <title>JUnit Temel Anatasyonlar </title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun Javada test yazma kutuphanesi olan JUnit deki temel anatasyonlardan bahsedecegim.Projelerde birim testi yazmak önemlidir çünkü kodumuz daha ürün olmadan sınanmış ve hata payı en düşük olacak şekilde yapılmıs olur.Daha temiz bir kod yazmış oluruz.Mesela test yazarken bazı methodları gereksız yere birden fazla yazdıgımızı görüp refaktoring yapmaya başlarız.Yani test yazmak dolaylı yoldanda bir çok rahatlık sağlamakta bize.Bi bakima testlerimize bakarak yazdigimiz kodun ne is yaptiginida anlayabiliriz bizim icin bir dokumantasyonda olmus olur bir nevi.Simdi gelin en temel test anatasyonlarina bir goz atalim;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;@BeforeClass : İlk calisir ve her sınıf için birkere çağırılır.Oluşturulan test methodu static olmalı.Çünkü arkaplanda @BeforeClass içerisinde static değişkenler vardır.&lt;/li&gt;
-  &lt;li&gt;@AfterClass : En son çalısır ve @BeforeClass gibi birkere çalışır.&lt;/li&gt;
-  &lt;li&gt;@before : Her test methodundan önce bir kere çalısır.Sırayla calisir.Bir nevi ön koşul.&lt;/li&gt;
-  &lt;li&gt;@after : Her test methodundan sonra çalısır.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ornek uzerinden pekistirelim ;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;@beforeclass : Veri tabanını ayagı kaldırır.&lt;/li&gt;
-  &lt;li&gt;@before : Oldugu method veri tabanı açar.&lt;/li&gt;
-  &lt;li&gt;@test : Methodumuzun bir test methodu oldugunu isaret eder.&lt;/li&gt;
-  &lt;li&gt;@after : Veri tabanını kapatır.&lt;/li&gt;
-  &lt;li&gt;@Ignore : Test edilmeden atlamasini saglar.Mesela hatayı çözemedik sonra bakarız dedik ama projenın calısması lazım @Ignore(“not sportted”)&lt;/li&gt;
-  &lt;li&gt;@afterbefore : Veri tabanini komple sonlandırır.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/junit/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/junit/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>Java</category>
-        
-      </item>
-    
-      <item>
-        <title>JAVA – Veritabanı (JDBC)</title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan JDBC Api sinden bahsedecegim.JDBC uygulama ile veritabanı arasında haberlesmemizi saglar.Gelin bu baglama isinin nasıl olduguna bakalım;&lt;/p&gt;
-
-&lt;p&gt;Veritabanına bağlanıp işlemlerimizi yapabilmemiz için 4 adıma ihtiyacımız var diyebiliriz.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Bağlantı nesnesini al ve bağlantı aç.&lt;/li&gt;
-  &lt;li&gt;Sorguyu hazırla ve ilgili yöntemi kullanarak veri tabanına gönder.(Statement)&lt;/li&gt;
-  &lt;li&gt;Gelen veriyi al ve işle.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Sonucu döndür ve bağlantıyı sonlandır.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Baglantı alma işlemi : JDBC api içerisindeki DriverManager sınıfındaki getConnection() methodu kullanılarak yapılmaktadır.Bu method paremetre olarak veritabanı urlsini,kullanıcı adını ve şifresini alıp geriye Connection nesnesi döndürmektedir.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DriverManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getConection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DB_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;USERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;em&gt;java.sql sınıflarının import edildiğinden emin olun.Veri tabanı baglantımız şuanda gerçekleşti.&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Statement nesnesi oluşturup executeQuery() methoduna sql kodumuzu paremetre olarak göndermemiz gerekmekte.Statement nesnesi connecion nesnesinden oluşturulmaktedır.Zaten yukarıda hali hazırda getConnection() methodundan dönen connection nesnemiz var.JDBC sorgu çalıştırmak için özel ifadeler kullanılır.Statement,PreparedStatement ve CallableStatement.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Statement&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createStatement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ResulSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;executeQuery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Select * from user&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;executeQuery() methodu geriye sorgulama sonuçlarını içeren ResultSet nesnesi döndürecektir.Bu resultset nesnesini satır ve sutundan oluşan tablolar gibi düşünebiliriz.Ve bu verileri içerisinde getString(“sutunADi”) ile ayıklayıp işlemimizi gerçekleştirebiliriz.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;okulNo&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ve işlemimiz bittiği için veritabanını kapatmamız gerekmekte.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;em&gt;Özet olarak kısaca birde bu kullandıgımız sınıfların/interfacelerin ne iş yaptıgına bakalım;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DriverManager :&lt;/strong&gt; JDBC sürücüsünün yüklenmesi ve veritabanı urlsini olarak veritabanına bağlantı kurulmasını sağlar. ( Singleton bir sınıftır. )&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Connecion Interface :&lt;/strong&gt; Veritabanı bağlantı bilgilerinin tutulmasını sağlar.Veri tabanına veri girilmesi sonuçların alınması vs. bu interface i kullanan sınıflar aracılıgı ile yapılır.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ResultSet Interface :&lt;/strong&gt;Statement üzerinde çalışan SQL sorgusu geriye resultset nesnesi dönecektir.Bu nesneyi işleyerek verilerimizi kullanabiliriz.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/java-veri-tabani-jdbc/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/java-veri-tabani-jdbc/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>Java</category>
         
       </item>
     
@@ -486,122 +826,9 @@ Koleksiyonlar bir grup değişkeni aynı değişken içerisinde gruplamaya,küme
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
+        <pubDate>Mon, 02 Nov 2015 01:16:01 +0300</pubDate>
         <link>http://localhost:4000//2015/Kolleksiyonlar/</link>
         <guid isPermaLink="true">http://localhost:4000//2015/Kolleksiyonlar/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>Java</category>
-        
-      </item>
-    
-      <item>
-        <title>Java Dosya Okuma/Yazma İşlemleri</title>
-        <description>&lt;p&gt;Merhaba arkadaslar bugun dosyada okuma/yazma işlemi nasıl yapılır basitce onu göstericeğim.Text olur normal dosya olur network olur hatta database bile olablir okuyacağımız kaynak.
-Öncelikle Stream in ne oldugundan bahsedelim.Kaynak ve uygulama arasında bir bağlantı oluşturulur.Bunun üzerinden dosyaya veri yazar yada okuruz.İşte bunu streamler üzerinden yaparız.2 ye ayırabiliriz JAVA da dosya okumayı.(Bunlar birer interfacedir.Javadaki herşey birer interface aslinda)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Reader ve Writer Siniflari :&lt;/strong&gt; Reader ve Writer Sınıfları ile karakter bazlı işlem yapabiliriz.Gidipte bir resim dosyası okuyamayız.Okuruz ama otomatik texte çevirir yani bir işe yaramaz.İşte onu byte bazlı yapmamız lazım yani Stream Sınıfları ile.Örnegin bir web sitemiz var log tutmamız lazım işte o zaman bu sınıfı kullanabiliriz.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Stream Sınıfları :&lt;/strong&gt; Stream Sınıfları ile ise byte bazlı işlemleri gerçekleştirebiliriz.Örnegin bir klasör kopyalicaz veya resim kayıt etmemiz lazım bunlar stream sınıfları ile gerçekleştirilir.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;reader-ve-writer-siniflari&quot;&gt;&lt;strong&gt;Reader ve Writer Siniflari&lt;/strong&gt;&lt;/h5&gt;
-
-&lt;p&gt;Dosya okuma ve yazmada temel mantık sirasiyla;&lt;/p&gt;
-
-&lt;p&gt;Önce bir dosya açılır.Sonrasında okuma yapılacaksa okunur,yazma işlemi gerçekleştirilecekse o işlem gerçekleştirilir ve iş bittikten sonra kapatılır.Aslında bukadar basit.&lt;/p&gt;
-
-&lt;p&gt;Ozaman uygulama ile bunu pekiştirelim:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JavaIO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/home/memojja/İndirilenler/deneme.txt&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//dosya yok ise ;&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createNewFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//oluştur.&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;BufferedWriter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BufferedWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Mehmet ARI n bu yazdığım alt satırda gözükecek&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;flush&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileWriter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JavaIO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/home/memojja/İndirilenler/deneme.txt&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;BufferedReader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dosya&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-
-		&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		        &lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h5 id=&quot;stream-snflar&quot;&gt;&lt;strong&gt;Stream Sınıfları&lt;/strong&gt;&lt;/h5&gt;
-
-&lt;p&gt;Ufak bi resim kopyalama işlemi yapalım.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.BufferedOutputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileNotFoundException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.FileOutputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JAVAStreamYazma&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/home/memojja/Masaüstü/android.png&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resim2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/home/memojja/Masaüstü/android2.png&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;BufferedInputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BufferedInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FileInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;BufferedOutputStream&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BufferedOutputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FileOutputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resim2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;girdi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;girdi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;flush&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;yazici&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;okuyucu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;kopyalandı&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Yazımı burada sonlandırıyorum arkadaslar, sonraki yazilarda bu okuma yazma islemlerini “Socket Programlamada” bir uygulamasini yapacagim.Umarim faydali olmustur.&lt;/p&gt;
-
-&lt;p&gt;Mutlu ve esen kalın. :)&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Nov 2015 00:16:01 +0200</pubDate>
-        <link>http://localhost:4000//2015/java-dosya-islemleri/</link>
-        <guid isPermaLink="true">http://localhost:4000//2015/java-dosya-islemleri/</guid>
         
         <category>Java</category>
         

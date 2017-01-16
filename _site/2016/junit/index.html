@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000//2015/junit/">
+  <link rel="canonical" href="http://localhost:4000//2016/junit/">
   <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
 </head>
 
@@ -155,31 +155,40 @@
         <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="17 Nov 2015" class="post-meta__date date">17 Nov 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Java">Java</a> </span>
+      <time datetime="17 Jul 2016" class="post-meta__date date">17 Jul 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Java">Java</a> </span>
     </div>
     <h1 class="post-title">JUnit Temel Anatasyonlar </h1>
   </header>
 
   <section class="post">
-    <p>Merhaba arkadaslar bugun Javada test yazma kutuphanesi olan JUnit deki temel anatasyonlardan bahsedecegim.Projelerde birim testi yazmak önemlidir çünkü kodumuz daha ürün olmadan sınanmış ve hata payı en düşük olacak şekilde yapılmıs olur.Daha temiz bir kod yazmış oluruz.Mesela test yazarken bazı methodları gereksız yere birden fazla yazdıgımızı görüp refaktoring yapmaya başlarız.Yani test yazmak dolaylı yoldanda bir çok rahatlık sağlamakta bize.Bi bakima testlerimize bakarak yazdigimiz kodun ne is yaptiginida anlayabiliriz bizim icin bir dokumantasyonda olmus olur bir nevi.Simdi gelin en temel test anatasyonlarina bir goz atalim;</p>
+    <p><img src="../../images/junit.jpg" alt="" /></p>
+
+<p>Merhaba arkadaslar bugun Javada test yazma kutuphanesi olan <strong>JUnit</strong> deki temel anatasyonlardan bahsedecegim.Projelerde birim testi yazmak önemlidir.Cünkü kodumuz daha ürün olmadan sınanmış ve hata payı en düşük olacak şekilde yapılmıs olur.Daha temiz bir kod yazmış oluruz.Mesela test yazarken bazı methodları gereksız yere birden fazla yazdıgımızı görüp refaktoring yapmaya başlarız.Yani test yazmak dolaylı yoldanda bir çok rahatlık sağlamakta bize.Bi bakima testlerimize bakarak yazdigimiz kodun ne is yaptiginida anlayabiliriz bizim icin bir dokumantasyonda olmus olur .Simdi gelin en temel test anatasyonlarina bir goz atalim;</p>
 
 <ul>
-  <li>@BeforeClass : İlk calisir ve her sınıf için birkere çağırılır.Oluşturulan test methodu static olmalı.Çünkü arkaplanda @BeforeClass içerisinde static değişkenler vardır.</li>
-  <li>@AfterClass : En son çalısır ve @BeforeClass gibi birkere çalışır.</li>
-  <li>@before : Her test methodundan önce bir kere çalısır.Sırayla calisir.Bir nevi ön koşul.</li>
-  <li>@after : Her test methodundan sonra çalısır.</li>
+  <li><strong>@BeforeClass :</strong> İlk calisir ve her sınıf için birkere çağırılır.Oluşturulan test methodu static olmalı.Çünkü arkaplanda @BeforeClass içerisinde <strong>static</strong> değişkenler vardır.</li>
+  <li><strong>@AfterClass :</strong> En son çalısır ve <strong>@BeforeClass</strong> gibi birkere çalışır.</li>
+  <li><strong>@before :</strong> Her test methodundan önce bir kere çalısır.Sırayla calisir.Bir nevi ön koşul.</li>
+  <li><strong>@after :</strong> Her test methodundan sonra çalısır.</li>
+  <li><strong>@test :</strong> Methodumuzun bir test methodu oldugunu isaret eder.</li>
 </ul>
 
-<p>Ornek uzerinden pekistirelim ;</p>
+<h5 id="ornek-uzerinden-pekistirelim-"><strong>Ornek uzerinden pekistirelim ;</strong></h5>
+
+<p><em>Bu ornegimiz bir projedeki veri tabaninin testi olsun;</em></p>
 
 <ul>
-  <li>@beforeclass : Veri tabanını ayagı kaldırır.</li>
-  <li>@before : Oldugu method veri tabanı açar.</li>
-  <li>@test : Methodumuzun bir test methodu oldugunu isaret eder.</li>
-  <li>@after : Veri tabanını kapatır.</li>
-  <li>@Ignore : Test edilmeden atlamasini saglar.Mesela hatayı çözemedik sonra bakarız dedik ama projenın calısması lazım @Ignore(“not sportted”)</li>
-  <li>@afterbefore : Veri tabanini komple sonlandırır.</li>
+  <li><strong>@test :</strong> Methodumuzun bir test methodu oldugunu isaret eder.</li>
+  <li><strong>@beforeclass :</strong> Veri tabanını ayagı kaldırır.</li>
+  <li><strong>@before :</strong> Oldugu method veri tabanı açar.</li>
+  <li><strong>@after :</strong> Veri tabanını kapatır.</li>
+  <li><strong>@Ignore :</strong> Test edilmeden atlamasini saglar.Mesela hatayı çözemedik sonra bakarız dedik ama projenın calısması lazım @Ignore(“not sportted”)</li>
+  <li><strong>@afterbefore :</strong> Veri tabanini komple sonlandırır.</li>
 </ul>
+
+<p>Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.</p>
+
+<p>Mutlu ve esen kalın :) .</p>
 
   </section>
   

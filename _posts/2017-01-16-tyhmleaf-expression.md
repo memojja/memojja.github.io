@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Tyhmeleaf Expression"
-date:   2015-11-17 16:16:01 -0600
+date:   2016-07-31 16:16:01 -0600
 categories: Java
 tags: Java Spring
 ---
+![](../../images/tymleaf.png)
 
-Merhaba arkadaslar bugun bugun tymleafden bahsedecegim.Tyhmeleaf açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken JSP yerine tyhmeleaf tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;
+Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.**Tyhmeleaf** açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken ~~JSP~~ yerine **tyhmeleaf** tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;
 
 **1-Variable Expression ${…} :** Context üzerine bind edilmis degiskenlere erişimde kullanılır.Örnekler;
 {% highlight java %}
@@ -48,7 +49,7 @@ _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz ya
 
 {% endhighlight %}
 
-> Basit bir form örneği yapalım ;
+_Gelin ogrendiklerimizle basit bir form örneği yapalım ;_
 
 
 {% highlight java %}
@@ -72,3 +73,7 @@ _Tabi bunların dışında variable expression içerisinde kullanabilecegimiz ya
     </form>
 
 {% endhighlight %}
+
+Bu yazimi burada sonlandiriyorum arkadaslar ogrendikce paylasmaya devam edicegim.
+
+Mutlu ve esen kalın :) .

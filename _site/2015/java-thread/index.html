@@ -161,7 +161,9 @@
   </header>
 
   <section class="post">
-    <p>Merhaba arkadaslar bugun threadlerden bahsedecegim.Threadler bir program içerisinde birden fazla işlemin gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.</p>
+    <p><img src="../../images/thread.jpg" alt="" /></p>
+
+<p>Merhaba arkadaslar bugun <strong>thread</strong>lerden bahsedecegim.Threadler bir program içerisinde <strong>birden fazla işlem</strong>in gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.</p>
 
 <p><strong><em>Ne yani nerelerde kullanicam ben bunu ?</em></strong></p>
 
@@ -170,21 +172,28 @@
 <p><strong>Javada bir thread oluşturmanın 2 farklı yolu vardır.</strong></p>
 
 <ul>
-  <li>Runnable interface’inden implement etmek.</li>
-  <li>Thread sınıfından extends etmek.</li>
+  <li><strong>Runnable</strong> interface’inden implement etmek.</li>
+  <li><strong>Thread</strong> sınıfından extends etmek.</li>
 </ul>
 
-<p>İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.Runnable interface oldugu için nesne olusturulmaz.Thread.start() diye başlatırız.</p>
+<p>İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.</p>
 
-<p>Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.</p>
+<ul>
+  <li>Runnable interface oldugu için nesne olusturulmaz.</li>
+  <li>Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.</li>
+</ul>
 
 <p>Kullanacaginiz yere gore degis tabiki ama Javada coklu kalitim mumkun olmadigindan bir kere extends etme hakkimiz var onuda thread de harcamak mantikli degil gibi.O yuzden siz thread olustururken Runnable interface ini implemente edin tabi bu benim sahsi gorusum.Gelin en onemli methodlarina bir bakalim;</p>
 
-<p><strong>sleep() :</strong> Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.
-<strong>isAlive() :</strong> Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)
-<strong>isİnterrupted() :</strong> Thread bekliyor mu diye kontrol eder.
-<strong>setPriority() :</strong> Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )
-<strong>notify() :</strong> Threadin durumunu bildirme methodu.</p>
+<p><strong>sleep() :</strong> Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.</p>
+
+<p><strong>isAlive() :</strong> Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)</p>
+
+<p><strong>isİnterrupted() :</strong> Thread bekliyor mu diye kontrol eder.</p>
+
+<p><strong>setPriority() :</strong> Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )</p>
+
+<p><strong>notify() :</strong> Threadin durumunu bildirme methodu.</p>
 
 <p>Gelin ufak bir ornek uzerinden konuyu pekistirelim ;</p>
 
@@ -216,11 +225,14 @@
 
 <span class="o">}</span></code></pre></figure>
 
+<p><em><strong>tr.start()</strong> dedigimiz anda <strong>run()</strong> methodu tetiklendi ve threadimiz calismaya basladi.</em></p>
+
 <p><img src="../../images/thread.png" alt="" /></p>
 
 <p>Görüldüğü üzere kafalarına göre çalışıyor.Belirli bir siralari yok.Peki bu iyi birsey mi yoksa kotu birsey mi ?
-kotu birsey peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;
-Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.</p>
+Kotu birsey.Peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;</p>
+
+<p>Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.</p>
 
 <p>Hemen projeyi anlatıyım.BankaHesap.java adında bir sınıfımız olacak bu bizim kasamız.Birde ParaCekme.java isminde bir sınıfımız olucak bunun içerisinde bir main methodumuz bide threadımız olucak.Aynı objeden 2 kişi para çekıcek biri çektikten sonra digeri çekicek synchronized sayesinde şimdi kodumuzu inceleyelim.</p>
 

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>UML Sınıf Diyagramı İlişkileri</title>
+  <meta name="description" content="Mehmet ARI - Junior Software Engineer">
+  <meta name="author" content="Mehmet ARI">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mehmet ARI">
+  <meta name="twitter:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mehmet ARI">
+  <meta property="og:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//2016/uml-iliskileri/">
+  <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Mehmet ARI">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Mehmet ARI</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Mehmet ARI - Junior Software Engineer</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Mehmet ARI blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/memojja" title="@memojja on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/memojja" title="memojja on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/arimehmet" title="arimehmet on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/memojja" title="memojja on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:memojja1907@gmail.com" title="Email memojja1907@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="10 Mar 2016" class="post-meta__date date">10 Mar 2016</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Yazilim_Muhendisligi">Yazilim_Muhendisligi</a> </span>
+    </div>
+    <h1 class="post-title">UML Sınıf Diyagramı İlişkileri</h1>
+  </header>
+
+  <section class="post">
+    <p>Merhaba arkadaslar bugun <strong>UML</strong>‘in ne oldugundan bahsedecegim.UML <strong>nesne tabanlı programlama</strong> yapmaya başlamadan önce <strong>ilk adım</strong> gibi düşünülebilir.Gerçek dünya nesnelerini projemize uygun olarak <strong>modeller</strong> ve sonrasına bu modele uygun bir şekilde <strong>kodlamaya</strong> baslariz.</p>
+
+<p><img src="../../images/animal.png" alt="" /></p>
+
+<p>Yukarıdaki kutucuğu inceledigimizde <strong>Animal</strong> yazısının oldugu yere sınıfın ismi ve alt kısımda 2 parçaya ayrılmıs olan kisimlarin ise ilk kısmında variable’ların sıralandıgı ikinci kısımda ise methodların sıralandıgı görülmektedir.
+Başlarındaki <strong>‘+’</strong> veya <strong>‘-‘</strong> ise onların <strong>erişim belirleyicileridir</strong>.Diğer erişim belirliyicileri ise aşagıdaki gibir.</p>
+
+<p><strong>– :</strong> Private</p>
+
+<p><strong># :</strong> Protected</p>
+
+<p><strong>~ :</strong> Package Access</p>
+
+<p><strong>+ :</strong> Public</p>
+
+<p><strong>Genel Kurallar :</strong></p>
+
+<ul>
+  <li>Sınıf isimleri <strong>bold</strong> yazılmalı.Fakat olsuturucagımız sınıf <strong>abstract</strong> ise sınıf ismi <strong><em>italic bold</em></strong> yapılmalı.</li>
+  <li>Eğer variable veya methodumuz <strong>static ise</strong> <del>altı çizili</del> yapmamız gerekmektedir.numOfAnimals değişkeni gibi.</li>
+  <li>Yukarıdaki resimde yer alan <strong>[1..10]</strong> ve <strong>[*]</strong> gibi ifadeler çoklulugu ifade eder.Yani kodumuzu yazarken bunları ArrayList gibi düşünebiliriz.</li>
+</ul>
+
+<p>Temel UML kavramlarından bahsettikden sonra sıra geldi asıl konumuza.Sınıfların birbiri ile ilişkilerini ifade etmek için belli başlı başlıklar var bunlar;</p>
+
+<ul>
+  <li><strong>Dependency</strong> ( Bağımlılık )</li>
+  <li><strong>Association</strong> ( Ortaklık )</li>
+  <li><strong>Aggregation</strong> ( Birleştirme )</li>
+  <li><strong>Composition</strong> ( Bileşim )</li>
+  <li><strong>Generalization</strong> (Inheritance) ( Kalıtım )</li>
+  <li><strong>Realization</strong> ( Gerçekleşme )</li>
+</ul>
+
+<p><img src="../../images/umlsinifdiyagramiiliskileri1.png" alt="" />
+<img src="../../images/umlsinifdiyagramiiliskileri2.jpg" alt="" /></p>
+
+<p>Yukarıda sınıf diyagramı ilişkileri bulunmaktadir.</p>
+
+<ul>
+  <li><strong>Association :</strong> Class A ile class B <strong>bir aradadır</strong>.</li>
+  <li><strong>Aggregation :</strong> Class A class B ye <strong>sahiptir</strong>.</li>
+  <li><strong>Composition :</strong> Class A class B yi <strong>barındırır</strong>.</li>
+  <li><strong>Dependency :</strong> Class A class B yi <strong>kullanır</strong>.</li>
+  <li><strong>Realization :</strong> class B Class A’yı <strong>realize</strong> eder. (implements)</li>
+</ul>
+
+<p>Gelin bu bilgileri pratige dokerek kodlamaya gecelim.</p>
+
+<p><strong>Dependency</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">(</span><span class="n">B</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Dependency line 1</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">getSomething</span><span class="o">();</span> <span class="c1">// Dependency line 2</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Bir sınıf bir başka sınıfın nesnesini <strong>local variable</strong> olarak kullanıyorsa buna dependency denir.Bildiğiniz gibi bir methodun parametresi o methodun aynı zamanda local bir değişkenidir.Yani yukarıdaki örneğe bakacak olursanız A sınıfı B sınıfının nesnesini local olarak alıp kullanmaktadır. Bu yüzden bu iki sınıf arasındaki ilişkiye dependency denmektedir.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">foo</span><span class="o">(){</span>
+        <span class="n">B</span> <span class="n">b</span><span class="o">=</span> <span class="k">new</span> <span class="n">B</span><span class="o">();</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">bar</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">B</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">bar</span><span class="o">(){</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>Association</strong></p>
+
+<p>Association ortada bir sahibin olmadığı ilişkilere denir.Öğretmen ve öğrenci örneğini ele alalım.Bir öğrencinin birden fazla öğretmeni veya bir öğretmenin birden fazla ögrencisi olabilir.Dikkat edin ikisi arasında bir sahiplik söz konusu değil.Bu tarz bir ilişki söz konusu ise association söz konusudur.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Ogrenci</span> <span class="o">{</span>
+    <span class="n">Ogretmen</span> <span class="n">ogretmen</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">(</span><span class="n">Ogretmen</span> <span class="n">ogretmen</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ogretmen</span> <span class="o">=</span> <span class="n">ogretmen</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">Ogretmen</span> <span class="o">{</span>
+    <span class="c1">//...</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Yukarıdaki örneği incelersek Ogrenci sınıfı kendi methodunun parametresi ile öğretmen nesnesini kendi field ına atmakta.</p>
+
+<ul>
+  <li>Dependecy ile kıyaslarsak;</li>
+</ul>
+
+<p>Dependecy’de <strong>instance variable(field)</strong> söz konusu değildi associationda bir field söz konusu yani diyebilirizki dependecy ilişkisi daha zayıftır.</p>
+
+<p><strong>Aggregation</strong></p>
+
+<p>Bazı nesnelerin olabilmesi için bazı nesnelerinde olması lazım.Peki nedemek bu?Örneğin bir arabamız var ve bu arabada motor,kapı,direksiyon vs birçok nesnenin olması lazım.Veya bir firmadaki takımı düşünürsek takım nesnesi birçok personel nesnelerinden oluşabilir. İşte nesnelerin bu şekildeki parça-bütün ilişkisine aggregation denmektedir. Kodlama açısından bakıcak olursak eğer ,sınıfın <strong>instance variable</strong>’ı(field’ı) başka bir sınıfın <strong>nesnesiyse</strong> ve herhangi bir methodun parametresi aracılığıyla bu instance variable initialize ediliyorsa buna “<strong>aggregation</strong>” denir. Aggregation association’a göre daha güçlüdür. Dolayısıyla aggregation’a güçlü association da denir.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">B</span> <span class="n">b</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setB</span><span class="o">(</span><span class="n">B</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+       <span class="k">this</span><span class="o">.</span><span class="na">b</span> <span class="o">=</span> <span class="n">b</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p>Aklınıza şu soru takılmış olabilir.Association ile Aggregation kodlama açısından aynı olmadımı ? Eğer association’ın yazısına geri dönecek olursanız aynı olduğunu görüceksiniz.Fakat işin temelinde ayrıştıkları noktalar var.</p>
+
+<ul>
+  <li>Association ve Aggregation Arasındaki Farklar ;</li>
+</ul>
+
+<p>Association <strong>zayıf baglılıktır</strong>.Aile gibi düşünebiliriz.Her aile birbirine baglıdır ama her biri aslında birer bireydir.Aileden ayrıldıgında yaşamında devam edebilir.Aggregation ise fabrika ürünleri gibi düşünebiliriz.Mesela mikrodalga içerisindeki nesneler tek basına bir işe yaramaz ama mikrodalga içerisinde birlikte çalıştıkları zaman işe yarar bir nesne ortaya çıkar.</p>
+
+<p><strong>Composition</strong></p>
+
+<p>Aggregation’ının daha güçlü haline Composition denmektedir. Composition’da da <strong>parça-bütün</strong> ilişkisi vardır, fakat parça ve bütün nesnelerinin ömürleri birbirine sıkı sıkıya bağlıdır. Birinin ölmesi/yok olması/silinmesi diğerini de öldürür/yok eder/siler. Aggregation’da birbirine kenetlenmiş bir ömür bağı yoktur. Compostion’a kod açısından bakılacak olursa bir sınıfın instance variable’ı başka bir sınıfın nesnesi ise ve tanımlanırken aynı zamanda direk initialize edilmişse buna “composition” denir.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">B</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">B</span><span class="o">()</span>  <span class="c1">// b field'ı direk initialize edilmekte</span>
+
+ <span class="o">}</span></code></pre></figure>
+
+<p>Aşağıdaki her iki kod da yukarıdaki koddan görünüşte farklı görünen fakat uml ilişkisi açısından yine composition olan kodlardır.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">B</span> <span class="n">b</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">A</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">B</span><span class="o">();</span> <span class="c1">// b field'ı direk initialize edilmekte</span>
+    <span class="o">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">B</span> <span class="n">b</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomethingUniqueToB</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">==</span> <span class="n">b</span><span class="o">)</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">B</span><span class="o">();</span> <span class="c1">// b field'ı direk initialize edilmekte</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">doSomething</span><span class="o">();</span>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p>Yani eğer bir sınıfın instance variable’ı(field’ı) local bir değişken araya girmeden direk new komutu ile initialize ediliyorsa buna “composition” denir. Eğer initialize işlemine methodun parametresi “aracılığı” girerse, yani local bir değişken araya girerse o zaman o ilişki aggregation olur.</p>
+
+<p><strong>Inheritance</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">B</span> <span class="kd">extends</span> <span class="n">A</span> <span class="o">{</span>
+
+    <span class="o">....</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>Realization</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">A</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">B</span> <span class="kd">implements</span> <span class="n">A</span> <span class="o">{</span>
+
+    <span class="o">...</span>
+
+<span class="o">}</span></code></pre></figure>
+
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2017 Mehmet ARI. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+    </div>
+  </body>
+</html>

@@ -5,8 +5,9 @@ date:   2015-11-17 16:16:01 -0600
 categories: Java
 tags: Java
 ---
+![](../../images/thread.jpg)
 
-Merhaba arkadaslar bugun threadlerden bahsedecegim.Threadler bir program içerisinde birden fazla işlemin gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.
+Merhaba arkadaslar bugun **thread**lerden bahsedecegim.Threadler bir program içerisinde **birden fazla işlem**in gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.
 
 **_Ne yani nerelerde kullanicam ben bunu ?_**
 
@@ -14,19 +15,24 @@ Soyleki, Mesela web sunucularıni dusunun.Her gelen client yani kullanıcı içi
 
 **Javada bir thread oluşturmanın 2 farklı yolu vardır.**
 
-* Runnable interface’inden implement etmek.
-* Thread sınıfından extends etmek.
+* **Runnable** interface’inden implement etmek.
+* **Thread** sınıfından extends etmek.
 
-İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.Runnable interface oldugu için nesne olusturulmaz.Thread.start() diye başlatırız.
+İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.
 
-Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.
+* Runnable interface oldugu için nesne olusturulmaz.
+* Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.
 
 Kullanacaginiz yere gore degis tabiki ama Javada coklu kalitim mumkun olmadigindan bir kere extends etme hakkimiz var onuda thread de harcamak mantikli degil gibi.O yuzden siz thread olustururken Runnable interface ini implemente edin tabi bu benim sahsi gorusum.Gelin en onemli methodlarina bir bakalim;
 
 **sleep() :** Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.
+
 **isAlive() :** Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)
+
 **isİnterrupted() :** Thread bekliyor mu diye kontrol eder.
+
 **setPriority() :** Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )
+
 **notify() :** Threadin durumunu bildirme methodu.
 
 Gelin ufak bir ornek uzerinden konuyu pekistirelim ;
@@ -62,10 +68,14 @@ public class ThreadDeneme {
 }
 {% endhighlight %}
 
+
+_**tr.start()** dedigimiz anda **run()** methodu tetiklendi ve threadimiz calismaya basladi._
+
 ![](../../images/thread.png)
 
 Görüldüğü üzere kafalarına göre çalışıyor.Belirli bir siralari yok.Peki bu iyi birsey mi yoksa kotu birsey mi ?
-kotu birsey peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;
+Kotu birsey.Peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;
+
 Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.
 
 Hemen projeyi anlatıyım.BankaHesap.java adında bir sınıfımız olacak bu bizim kasamız.Birde ParaCekme.java isminde bir sınıfımız olucak bunun içerisinde bir main methodumuz bide threadımız olucak.Aynı objeden 2 kişi para çekıcek biri çektikten sonra digeri çekicek synchronized sayesinde şimdi kodumuzu inceleyelim.
