@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Tyhmeleaf Expression</title>
+  <meta name="description" content="Mehmet ARI - Junior Software Engineer">
+  <meta name="author" content="Mehmet ARI">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mehmet ARI">
+  <meta name="twitter:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mehmet ARI">
+  <meta property="og:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//2015/tyhmleaf-expression/">
+  <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Mehmet ARI">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Mehmet ARI</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Mehmet ARI - Junior Software Engineer</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Mehmet ARI blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/memojja" title="@memojja on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/memojja" title="memojja on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/arimehmet" title="arimehmet on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/memojja" title="memojja on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:memojja1907@gmail.com" title="Email memojja1907@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="17 Nov 2015" class="post-meta__date date">17 Nov 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Java">Java</a> <a href="/tags/#Spring">Spring</a> </span>
+    </div>
+    <h1 class="post-title">Tyhmeleaf Expression</h1>
+  </header>
+
+  <section class="post">
+    <p>Merhaba arkadaslar bugun bugun tymleafden bahsedecegim.Tyhmeleaf açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken JSP yerine tyhmeleaf tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;</p>
+
+<p><strong>1-Variable Expression ${…} :</strong> Context üzerine bind edilmis degiskenlere erişimde kullanılır.Örnekler;</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"${name}"</span><span class="o">&gt;</span><span class="n">Mehmet</span> <span class="n">ARI</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"${person.name}"</span><span class="o">&gt;</span><span class="n">Mehmet</span> <span class="n">ARI</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"${person[0].name}"</span><span class="o">&gt;</span><span class="n">Mehmet</span> <span class="n">ARI</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"${person.getName()}"</span><span class="o">&gt;</span><span class="n">Mehmet</span> <span class="n">ARI</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span></code></pre></figure>
+
+<p><em>Tabi bunların dışında variable expression içerisinde kullanabilecegimiz yardımcı objeler mevcut.Bunlar; lists,calendar,maps,locale,dates gibi objeler.</em></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"${#dates.day}"</span><span class="o">&gt;</span> <span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span></code></pre></figure>
+
+<p><strong>2-Selection Variable Expression :</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">div</span> <span class="nl">th:</span><span class="n">object</span><span class="o">=</span><span class="s">"${user}"</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="nl">Name:</span> <span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">" * {name}"</span><span class="o">&gt;</span><span class="n">Mehmet</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="nl">Surname:</span> <span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"* {surname}"</span><span class="o">&gt;</span><span class="n">Ar</span><span class="err">ı</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="nl">Univercity:</span> <span class="o">&lt;</span><span class="n">span</span> <span class="nl">th:</span><span class="n">text</span><span class="o">=</span><span class="s">"* {Univercity}"</span><span class="o">&gt;</span><span class="n">Karab</span><span class="err">ü</span><span class="n">k</span> <span class="err">Ü</span><span class="n">ni</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span></code></pre></figure>
+
+<p><strong>3-Message Expression #{…} :</strong> Properties dosyasında tanımladığınız değişkenleri basmamızı sağlar.</p>
+
+<p><strong>4-Link/Url Expression @{…} :</strong> Link ve url tanımlamalarında kullanılır.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">"fatura.html"</span> <span class="nl">th:</span><span class="n">href</span><span class="o">=</span><span class="s">"@{/fatura}"</span><span class="o">&gt;</span><span class="n">G</span><span class="err">ö</span><span class="n">r</span><span class="err">ü</span><span class="n">nt</span><span class="err">ü</span><span class="n">le</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">"fatura.html"</span> <span class="nl">th:</span><span class="n">href</span><span class="o">=</span><span class="s">"@{/fatura/(faturaId=${f.id})}"</span><span class="o">&gt;</span><span class="n">G</span><span class="err">ö</span><span class="n">r</span><span class="err">ü</span><span class="n">nt</span><span class="err">ü</span><span class="n">le</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">"fatura.html"</span> <span class="nl">th:</span><span class="n">href</span><span class="o">=</span><span class="s">"@{/fatura/details(faturaId=${o.id}, type='Maximum')}"</span><span class="o">&gt;</span><span class="n">G</span><span class="err">ö</span><span class="n">r</span><span class="err">ü</span><span class="n">nt</span><span class="err">ü</span><span class="n">le</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span></code></pre></figure>
+
+<blockquote>
+  <p>Basit bir form örneği yapalım ;</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">form</span> <span class="nl">th:</span><span class="n">action</span><span class="o">=</span><span class="s">"@{/faturalar}"</span> <span class="nl">th:</span><span class="n">object</span><span class="o">=</span><span class="s">"${fatura}"</span> <span class="nl">th:</span><span class="n">method</span><span class="o">=</span><span class="s">"post"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">Fatura</span> <span class="nl">Type:</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">"text"</span> <span class="nl">th:</span><span class="n">field</span><span class="o">=</span><span class="s">"*{type}"</span> <span class="o">/&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span> <span class="nl">th:</span><span class="k">if</span><span class="o">=</span><span class="s">"${#fields.hasErrors('type')}"</span> <span class="nl">th:</span><span class="n">errors</span><span class="o">=</span><span class="s">"*{type}"</span><span class="o">&gt;</span><span class="n">Fatura</span> <span class="n">Type</span> <span class="n">Error</span> <span class="n">will</span> <span class="n">appear</span> <span class="n">here</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="err">Ü</span><span class="nl">cret:</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">input</span> <span class="n">type</span><span class="o">=</span><span class="s">"text"</span> <span class="nl">th:</span><span class="n">field</span><span class="o">=</span><span class="s">"*{amount}"</span> <span class="o">/&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span> <span class="nl">th:</span><span class="k">if</span><span class="o">=</span><span class="s">"${#fields.hasErrors('amount')}"</span> <span class="nl">th:</span><span class="n">errors</span><span class="o">=</span><span class="s">"*{amount}"</span><span class="o">&gt;</span><span class="n">Amount</span> <span class="n">Error</span> <span class="n">will</span> <span class="n">appear</span> <span class="n">here</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="n">button</span> <span class="n">type</span><span class="o">=</span><span class="s">"submit"</span><span class="o">&gt;</span><span class="n">Add</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span></code></pre></figure>
+
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2017 Mehmet ARI. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+    </div>
+  </body>
+</html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Tags</title>
+  <title>JAVA – Veritabanı (JDBC)</title>
   <meta name="description" content="Mehmet ARI - Junior Software Engineer">
   <meta name="author" content="Mehmet ARI">
   <meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000//tags/">
+  <link rel="canonical" href="http://localhost:4000//2015/java-veri-tabani-jdbc/">
   <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
 </head>
 
@@ -152,212 +152,69 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <h2>Tags:</h2>
-<div class="tags"> 
- 
-  <a href="#Java">Java</a>
- 
-  <a href="#Linux">Linux</a>
- 
-  <a href="#Android">Android</a>
- 
-  <a href="#Spring">Spring</a>
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="17 Nov 2015" class="post-meta__date date">17 Nov 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Java">Java</a> </span>
+    </div>
+    <h1 class="post-title">JAVA – Veritabanı (JDBC)</h1>
+  </header>
 
-</div>
+  <section class="post">
+    <p>Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan JDBC Api sinden bahsedecegim.JDBC uygulama ile veritabanı arasında haberlesmemizi saglar.Gelin bu baglama isinin nasıl olduguna bakalım;</p>
 
-<!-- iterate through all tags on the site --> 
- 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="Java">  
-    <h3> Java </h3>  <!-- for create a heading --> 
+<p>Veritabanına bağlanıp işlemlerimizi yapabilmemiz için 4 adıma ihtiyacımız var diyebiliriz.</p>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/tyhmleaf-expression/">Tyhmeleaf Expression</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/java-thread/">JAVA – Thread</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/spring-boot-nedir/">Spring Boot Nedir ? </a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/junit/">JUnit Temel Anatasyonlar </a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/java-veri-tabani-jdbc/">JAVA – Veritabanı (JDBC)</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/Kolleksiyonlar/">Java Kolleksiyonlar</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/java-dosya-islemleri/">Java Dosya Okuma/Yazma İşlemleri</a>
-            </li>
-        
-      
-    </ul>
-  </div>
- 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="Linux">  
-    <h3> Linux </h3>  <!-- for create a heading --> 
+<ul>
+  <li>Bağlantı nesnesini al ve bağlantı aç.</li>
+  <li>Sorguyu hazırla ve ilgili yöntemi kullanarak veri tabanına gönder.(Statement)</li>
+  <li>Gelen veriyi al ve işle.</li>
+  <li>
+    <p>Sonucu döndür ve bağlantıyı sonlandır.</p>
+  </li>
+  <li>Baglantı alma işlemi : JDBC api içerisindeki DriverManager sınıfındaki getConnection() methodu kullanılarak yapılmaktadır.Bu method paremetre olarak veritabanı urlsini,kullanıcı adını ve şifresini alıp geriye Connection nesnesi döndürmektedir.</li>
+</ul>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/linux-bilgi-edinme-komutlari/">Linux bilgi edinme komutları</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-      
-    </ul>
-  </div>
- 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="Android">  
-    <h3> Android </h3>  <!-- for create a heading --> 
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Connection</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">DriverManager</span><span class="o">.</span><span class="na">getConection</span><span class="o">(</span><span class="n">DB_URL</span><span class="o">,</span><span class="n">USERNAME</span><span class="o">,</span><span class="n">PW</span><span class="o">);</span></code></pre></figure>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/renk-uyum-siteleri/">Renk Uyum Siteleri</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-      
-    </ul>
-  </div>
- 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="Spring">  
-    <h3> Spring </h3>  <!-- for create a heading --> 
+<p><em>java.sql sınıflarının import edildiğinden emin olun.Veri tabanı baglantımız şuanda gerçekleşti.</em></p>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/tyhmleaf-expression/">Tyhmeleaf Expression</a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-         
-            <li>
-              <a href="//2015/spring-boot-nedir/">Spring Boot Nedir ? </a>
-            </li>
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-       
-        <!-- list only those which contain the current tag --> 
-        
-      
-    </ul>
-  </div>
+<ul>
+  <li>Statement nesnesi oluşturup executeQuery() methoduna sql kodumuzu paremetre olarak göndermemiz gerekmekte.Statement nesnesi connecion nesnesinden oluşturulmaktedır.Zaten yukarıda hali hazırda getConnection() methodundan dönen connection nesnemiz var.JDBC sorgu çalıştırmak için özel ifadeler kullanılır.Statement,PreparedStatement ve CallableStatement.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Statement</span> <span class="n">stm</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="na">createStatement</span><span class="o">();</span>
+<span class="n">ResulSet</span> <span class="n">results</span> <span class="o">=</span> <span class="n">stm</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="s">"Select * from user"</span><span class="o">);</span></code></pre></figure>
+
+<ul>
+  <li>executeQuery() methodu geriye sorgulama sonuçlarını içeren ResultSet nesnesi döndürecektir.Bu resultset nesnesini satır ve sutundan oluşan tablolar gibi düşünebiliriz.Ve bu verileri içerisinde getString(“sutunADi”) ile ayıklayıp işlemimizi gerçekleştirebiliriz.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"> <span class="k">while</span> <span class="o">(</span> <span class="n">results</span><span class="o">.</span><span class="na">next</span><span class="o">()</span> <span class="o">)</span> <span class="o">{</span>
+ <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">results</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"id"</span><span class="o">));</span>
+ <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">results</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"name"</span><span class="o">));</span>
+ <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">results</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"okulNo"</span><span class="o">));</span>
+ <span class="o">}</span></code></pre></figure>
+
+<ul>
+  <li>Ve işlemimiz bittiği için veritabanını kapatmamız gerekmekte.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">conn</span><span class="o">.</span><span class="na">close</span><span class="o">();</span></code></pre></figure>
+
+<p><em>Özet olarak kısaca birde bu kullandıgımız sınıfların/interfacelerin ne iş yaptıgına bakalım;</em></p>
+
+<p><strong>DriverManager :</strong> JDBC sürücüsünün yüklenmesi ve veritabanı urlsini olarak veritabanına bağlantı kurulmasını sağlar. ( Singleton bir sınıftır. )</p>
+
+<p><strong>Connecion Interface :</strong> Veritabanı bağlantı bilgilerinin tutulmasını sağlar.Veri tabanına veri girilmesi sonuçların alınması vs. bu interface i kullanan sınıflar aracılıgı ile yapılır.</p>
+
+<p><strong>ResultSet Interface :</strong>Statement üzerinde çalışan SQL sorgusu geriye resultset nesnesi dönecektir.Bu nesneyi işleyerek verilerimizi kullanabiliriz.</p>
+
+  </section>
+  
+</article>
+
+
 
       </div>
 

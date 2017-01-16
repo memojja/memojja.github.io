@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>JAVA – Thread</title>
+  <meta name="description" content="Mehmet ARI - Junior Software Engineer">
+  <meta name="author" content="Mehmet ARI">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mehmet ARI">
+  <meta name="twitter:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mehmet ARI">
+  <meta property="og:description" content="Mehmet ARI - Junior Software Engineer">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//2015/java-thread/">
+  <link rel="alternate" type="application/rss+xml" title="Mehmet ARI" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+  
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Mehmet ARI">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Mehmet ARI</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Mehmet ARI - Junior Software Engineer</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Mehmet ARI blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+          
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/memojja" title="@memojja on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/memojja" title="memojja on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/arimehmet" title="arimehmet on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/memojja" title="memojja on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:memojja1907@gmail.com" title="Email memojja1907@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+          
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="17 Nov 2015" class="post-meta__date date">17 Nov 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#Java">Java</a> </span>
+    </div>
+    <h1 class="post-title">JAVA – Thread</h1>
+  </header>
+
+  <section class="post">
+    <p>Merhaba arkadaslar bugun threadlerden bahsedecegim.Threadler bir program içerisinde birden fazla işlemin gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.</p>
+
+<p><strong><em>Ne yani nerelerde kullanicam ben bunu ?</em></strong></p>
+
+<p>Soyleki, Mesela web sunucularıni dusunun.Her gelen client yani kullanıcı için bir thread açar.Her kullanıcı kendi threadınde işlem yapar.Yada gmail hesabınızı düşünün.Mail atarken diğer yandan size mail gelmeye devam edıyor.Yada oynadıgınız oyunlar,en heyecanlı yerinde çat diye reklam gelir hani işte oda bir thread :).</p>
+
+<p><strong>Javada bir thread oluşturmanın 2 farklı yolu vardır.</strong></p>
+
+<ul>
+  <li>Runnable interface’inden implement etmek.</li>
+  <li>Thread sınıfından extends etmek.</li>
+</ul>
+
+<p>İkisindede birbirine benzerdir aslında.Farkları biri sınıf diğerinin interface olmasından kaynaklanıyor aslında.Runnable interface oldugu için nesne olusturulmaz.Thread.start() diye başlatırız.</p>
+
+<p>Thread sınıfından ise bir obje oluşturur ve o objeyi start() methodu ile çalıştırıp threadleri başlatabiliriz.</p>
+
+<p>Kullanacaginiz yere gore degis tabiki ama Javada coklu kalitim mumkun olmadigindan bir kere extends etme hakkimiz var onuda thread de harcamak mantikli degil gibi.O yuzden siz thread olustururken Runnable interface ini implemente edin tabi bu benim sahsi gorusum.Gelin en onemli methodlarina bir bakalim;</p>
+
+<p><strong>sleep() :</strong> Milisaniye cinsinden int parametre alır.Ve aldıgı deger süresince threadı uyutur.
+<strong>isAlive() :</strong> Thread çalışıyor mu diye kontrol eder.(Javada isXXX() diye bir method varsa dönüş tipi boolean dır.)
+<strong>isİnterrupted() :</strong> Thread bekliyor mu diye kontrol eder.
+<strong>setPriority() :</strong> Thread e öncelik verir.( setPriority(Thread.MAX_PRIORITY) )
+<strong>notify() :</strong> Threadin durumunu bildirme methodu.</p>
+
+<p>Gelin ufak bir ornek uzerinden konuyu pekistirelim ;</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ThreadDeneme</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">ThreadRun</span> <span class="n">tr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadRun</span><span class="o">();</span>
+		<span class="n">ThreadRun</span> <span class="n">tr1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadRun</span><span class="o">();</span>
+		<span class="n">tr1</span><span class="o">.</span><span class="na">threadName</span><span class="o">(</span><span class="s">"memojja"</span><span class="o">);</span>
+		<span class="n">tr</span><span class="o">.</span><span class="na">threadName</span><span class="o">(</span><span class="s">"arı"</span><span class="o">);</span>
+		<span class="n">tr1</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+		<span class="n">tr</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+	<span class="o">}</span>
+
+	<span class="kd">static</span> <span class="kd">class</span> <span class="nc">ThreadRun</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
+		<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">threadName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+		<span class="o">}</span>
+
+		<span class="nd">@Override</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+			<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p><img src="../../images/thread.png" alt="" /></p>
+
+<p>Görüldüğü üzere kafalarına göre çalışıyor.Belirli bir siralari yok.Peki bu iyi birsey mi yoksa kotu birsey mi ?
+kotu birsey peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;
+Mesela bir öğrenci kayıt sistemi yaptık.Ve öğrenci diye bir objemiz var.Ögrenci notlarını indirirken hoca bir yandan ögrencinin notunu değiştiriyor.İşte böyle durumlarda methodları kitlememiz lazım.Biri birşey yaparken digeri kitlensin.1.sıradakinin işi bittikten sonra 2.sıradaki devam etsin.İşte bunlar synchronized method ve objelerle mümkün.Ufak bir proje yapalım ve bu konu pekişsin.</p>
+
+<p>Hemen projeyi anlatıyım.BankaHesap.java adında bir sınıfımız olacak bu bizim kasamız.Birde ParaCekme.java isminde bir sınıfımız olucak bunun içerisinde bir main methodumuz bide threadımız olucak.Aynı objeden 2 kişi para çekıcek biri çektikten sonra digeri çekicek synchronized sayesinde şimdi kodumuzu inceleyelim.</p>
+
+<p><strong>BankaHesap.java</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">Bankamatik</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BankaHesap</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="kt">double</span> <span class="n">bakiye</span><span class="o">;</span>
+
+	<span class="kd">public</span> <span class="nf">BankaHesap</span><span class="o">(</span><span class="kt">double</span> <span class="n">bakiye</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">bakiye</span> <span class="o">=</span> <span class="n">bakiye</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">paraCek</span><span class="o">(</span><span class="kt">double</span> <span class="n">tutar</span><span class="o">,</span> <span class="n">String</span> <span class="n">kim</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">if</span> <span class="o">(</span><span class="n">tutar</span> <span class="o">&gt;</span> <span class="n">bakiye</span><span class="o">)</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Bakiyenizde okadar para yok "</span> <span class="o">+</span> <span class="n">kim</span><span class="o">);</span>
+		<span class="k">else</span>
+		<span class="o">{</span>
+			<span class="n">bakiye</span> <span class="o">-=</span> <span class="n">tutar</span><span class="o">;</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"kalan bakiye "</span> <span class="o">+</span> <span class="n">bakiye</span> <span class="o">+</span> <span class="s">"  "</span> <span class="o">+</span> <span class="n">kim</span><span class="o">);</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p><strong>ParaCekme.java</strong></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">Bankamatik</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ParaCekme</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">BankaHesap</span> <span class="n">b1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankaHesap</span><span class="o">(</span><span class="mi">6000</span><span class="o">);</span>
+
+		<span class="n">ParaCekmeThread</span> <span class="n">pc1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ParaCekmeThread</span><span class="o">(</span><span class="n">b1</span><span class="o">,</span> <span class="mi">6000</span><span class="o">,</span> <span class="s">"mehmet"</span><span class="o">);</span>
+		<span class="n">ParaCekmeThread</span> <span class="n">pc2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ParaCekmeThread</span><span class="o">(</span><span class="n">b1</span><span class="o">,</span> <span class="mi">6000</span><span class="o">,</span> <span class="s">"hasan"</span><span class="o">);</span>
+		<span class="n">pc1</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+		<span class="n">pc2</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+	<span class="o">}</span>
+
+	<span class="kd">static</span> <span class="kd">class</span> <span class="nc">ParaCekmeThread</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
+		<span class="n">BankaHesap</span> <span class="n">b1</span><span class="o">;</span>
+		<span class="kt">double</span> <span class="n">tutar</span><span class="o">;</span>
+		<span class="n">String</span> <span class="n">isim</span><span class="o">;</span>
+
+		<span class="kd">public</span> <span class="nf">ParaCekmeThread</span><span class="o">(</span><span class="n">BankaHesap</span> <span class="n">b1</span><span class="o">,</span> <span class="kt">double</span> <span class="n">tutar</span><span class="o">,</span> <span class="n">String</span> <span class="n">isim</span><span class="o">)</span> <span class="o">{</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">b1</span> <span class="o">=</span> <span class="n">b1</span><span class="o">;</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">tutar</span> <span class="o">=</span> <span class="n">tutar</span><span class="o">;</span>
+			<span class="k">this</span><span class="o">.</span><span class="na">isim</span> <span class="o">=</span> <span class="n">isim</span><span class="o">;</span>
+		<span class="o">}</span>
+
+		<span class="nd">@Override</span>
+		<span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+			<span class="n">b1</span><span class="o">.</span><span class="na">paraCek</span><span class="o">(</span><span class="mi">6000</span><span class="o">,</span> <span class="n">isim</span><span class="o">);</span>
+		<span class="o">}</span>
+
+	<span class="o">}</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p>Ekran ciktitisi;</p>
+
+<p><img src="../../images/thread_banka_ornegi.png" alt="" /></p>
+
+<p>Goruldugu gibi sirayla erismek durumunda kaliyorlar ayni hesap uzerinden mehmet hasandan once 6000 lira cektigi icin hasana bakiye yetersiz ciktisini verdi.synchronized yapmasaydik ikiside ayni anda erisdiginde ikisindede 6000 lira gozukucek ve ikiside parayi cekicekti totalda 12000 lira cekilmis olucakti. :)</p>
+
+<p>Umarim faydali olmustur arkadaslar esen kalin.</p>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2017 Mehmet ARI. All rights reserved.</span>
+</footer> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+    </div>
+  </body>
+</html>
