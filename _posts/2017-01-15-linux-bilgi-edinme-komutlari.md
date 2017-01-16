@@ -5,7 +5,7 @@ date:   2016-02-6 16:16:01 -0600
 categories: Linux
 tags: Linux
 ---
-![](../../images/linux.png)
+![](../../images/linux.png){: .resiim }
 
 * **id [kullanıcı_ismi] :**  Kullanıcının kimligini verir.
 * **finger [kullanıcı_ismi] :**  Kullanıcı hakkında bilgi verir

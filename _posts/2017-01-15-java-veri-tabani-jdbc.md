@@ -5,7 +5,7 @@ date:   2016-06-9 16:16:01 -0600
 categories: Java
 tags: Java
 ---
-![](../../images/jdbc.png)
+![](../../images/jdbc.png){: .resiim }
 
 Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan **JDBC Api** sinden bahsedecegim.JDBC uygulama ile veritabanı arasında **haberlesmemizi** saglar.Gelin bu baglama isinin nasıl olduguna bakalım;
 

@@ -7,7 +7,7 @@ tags: Android
 
 ---
 
-![](../../images/renkkodlari.png)
+![](../../images/renkkodlari.png){: .resiim }
 
 Merhaba arkadaslar bugun **android** veya **web** uygulamalariniz icin benimde sikca kullandigim web sitelerini paylasacagim umarim faydali olur. :)
 

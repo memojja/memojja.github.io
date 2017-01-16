@@ -5,13 +5,13 @@
     <description>Mehmet ARI - Junior Software Engineer</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Jan 2017 20:36:49 +0300</pubDate>
-    <lastBuildDate>Mon, 16 Jan 2017 20:36:49 +0300</lastBuildDate>
+    <pubDate>Mon, 16 Jan 2017 21:19:44 +0300</pubDate>
+    <lastBuildDate>Mon, 16 Jan 2017 21:19:44 +0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Tyhmeleaf Expression</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/tymleaf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/tymleaf.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun bugun Tymleafden bahsedecegim.&lt;strong&gt;Tyhmeleaf&lt;/strong&gt; açık kaynak bir Html5 template engine’dir.Servlet tabanlıdır ve Spring’e entegre edilmesi kolaydır bu yüzden spring uygualmaları yazılırken &lt;del&gt;JSP&lt;/del&gt; yerine &lt;strong&gt;tyhmeleaf&lt;/strong&gt; tercih edilir.4 tip expression vardır diyebiliriz.Bunlar;&lt;/p&gt;
 
@@ -81,7 +81,7 @@
     
       <item>
         <title>JUnit Temel Anatasyonlar </title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/junit.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/junit.jpg&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun Javada test yazma kutuphanesi olan &lt;strong&gt;JUnit&lt;/strong&gt; deki temel anatasyonlardan bahsedecegim.Projelerde birim testi yazmak önemlidir.Cünkü kodumuz daha ürün olmadan sınanmış ve hata payı en düşük olacak şekilde yapılmıs olur.Daha temiz bir kod yazmış oluruz.Mesela test yazarken bazı methodları gereksız yere birden fazla yazdıgımızı görüp refaktoring yapmaya başlarız.Yani test yazmak dolaylı yoldanda bir çok rahatlık sağlamakta bize.Bi bakima testlerimize bakarak yazdigimiz kodun ne is yaptiginida anlayabiliriz bizim icin bir dokumantasyonda olmus olur .Simdi gelin en temel test anatasyonlarina bir goz atalim;&lt;/p&gt;
 
@@ -123,7 +123,7 @@
     
       <item>
         <title>SOLID Principles I</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/solid.-jenga.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/solid.-jenga.jpg&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun 2 seriden olusucak olan SOLID prensiblerinin ilk serisini bildigim kadariyla anlatmaya calisicagim.
 SOLID dediğimiz ( &lt;strong&gt;Single responsibility&lt;/strong&gt; , &lt;strong&gt;Open-closed&lt;/strong&gt; , &lt;strong&gt;Liskov substitution&lt;/strong&gt; , &lt;strong&gt;Interface segregation&lt;/strong&gt; ve &lt;strong&gt;Dependency inversion&lt;/strong&gt; ) yazılım tasarım prensibleri için kullanılan bir kısaltmadır.TDD(Tes Driven Development) un vaz geçilmezidir.Yani bu prensibi kullandığımızda geliştirmesi ve bakımı en kolay yazılımı yapbilmemiz daha muhtemeldir.&lt;/p&gt;
@@ -236,7 +236,7 @@ SOLID dediğimiz ( &lt;strong&gt;Single responsibility&lt;/strong&gt; , &lt;stro
     
       <item>
         <title>JAVA – Veritabanı</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/jdbc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/jdbc.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun Javada veritabani islemlerini yapmamizi saglayan &lt;strong&gt;JDBC Api&lt;/strong&gt; sinden bahsedecegim.JDBC uygulama ile veritabanı arasında &lt;strong&gt;haberlesmemizi&lt;/strong&gt; saglar.Gelin bu baglama isinin nasıl olduguna bakalım;&lt;/p&gt;
 
@@ -327,7 +327,7 @@ Ve diğer web frameworklerinden farklı olarak &lt;strong&gt;main methodu&lt;/st
         <title>UML Sınıf Diyagramı İlişkileri</title>
         <description>&lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;UML&lt;/strong&gt;‘in ne oldugundan bahsedecegim.UML &lt;strong&gt;nesne tabanlı programlama&lt;/strong&gt; yapmaya başlamadan önce &lt;strong&gt;ilk adım&lt;/strong&gt; gibi düşünülebilir.Gerçek dünya nesnelerini projemize uygun olarak &lt;strong&gt;modeller&lt;/strong&gt; ve sonrasına bu modele uygun bir şekilde &lt;strong&gt;kodlamaya&lt;/strong&gt; baslariz.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../images/animal.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../images/animal.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Yukarıdaki kutucuğu inceledigimizde &lt;strong&gt;Animal&lt;/strong&gt; yazısının oldugu yere sınıfın ismi ve alt kısımda 2 parçaya ayrılmıs olan kisimlarin ise ilk kısmında variable’ların sıralandıgı ikinci kısımda ise methodların sıralandıgı görülmektedir.
 Başlarındaki &lt;strong&gt;‘+’&lt;/strong&gt; veya &lt;strong&gt;‘-‘&lt;/strong&gt; ise onların &lt;strong&gt;erişim belirleyicileridir&lt;/strong&gt;.Diğer erişim belirliyicileri ise aşagıdaki gibir.&lt;/p&gt;
@@ -519,7 +519,7 @@ Başlarındaki &lt;strong&gt;‘+’&lt;/strong&gt; veya &lt;strong&gt;‘-‘&l
     
       <item>
         <title>Linux bilgi edinme komutları</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/linux.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/linux.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;id [kullanıcı_ismi] :&lt;/strong&gt;  Kullanıcının kimligini verir.&lt;/li&gt;
@@ -548,7 +548,7 @@ Başlarındaki &lt;strong&gt;‘+’&lt;/strong&gt; veya &lt;strong&gt;‘-‘&l
     
       <item>
         <title>JAVA – Thread</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/thread.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/thread.jpg&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;thread&lt;/strong&gt;lerden bahsedecegim.Threadler bir program içerisinde &lt;strong&gt;birden fazla işlem&lt;/strong&gt;in gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.&lt;/p&gt;
 
@@ -701,7 +701,7 @@ Kotu birsey.Peki bunu nasil duzeltebiliriz bir ornek uzerinden anlatiyim;&lt;/p&
     
       <item>
         <title>Renk Uyum Siteleri</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../images/renkkodlari.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;../../images/renkkodlari.png&quot; alt=&quot;&quot; class=&quot;resiim&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Merhaba arkadaslar bugun &lt;strong&gt;android&lt;/strong&gt; veya &lt;strong&gt;web&lt;/strong&gt; uygulamalariniz icin benimde sikca kullandigim web sitelerini paylasacagim umarim faydali olur. :)&lt;/p&gt;
 

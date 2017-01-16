@@ -8,7 +8,7 @@ tags: Yazilim_Muhendisligi
 
 Merhaba arkadaslar bugun **UML**'in ne oldugundan bahsedecegim.UML **nesne tabanlı programlama** yapmaya başlamadan önce **ilk adım** gibi düşünülebilir.Gerçek dünya nesnelerini projemize uygun olarak **modeller** ve sonrasına bu modele uygun bir şekilde **kodlamaya** baslariz.
 
-![](../../images/animal.png)
+![](../../images/animal.png){: .resiim }
 
 Yukarıdaki kutucuğu inceledigimizde **Animal** yazısının oldugu yere sınıfın ismi ve alt kısımda 2 parçaya ayrılmıs olan kisimlarin ise ilk kısmında variable’ların sıralandıgı ikinci kısımda ise methodların sıralandıgı görülmektedir.
 Başlarındaki **‘+’** veya **‘-‘** ise onların **erişim belirleyicileridir**.Diğer erişim belirliyicileri ise aşagıdaki gibir.

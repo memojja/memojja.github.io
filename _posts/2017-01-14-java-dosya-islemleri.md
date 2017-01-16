@@ -5,7 +5,7 @@ date:   2015-10-29 16:16:01 -0600
 categories: Java
 tags: Java
 ---
-![](../../images/javaio.png)
+![](../../images/javaio.png){: .resiim }
 
 Merhaba arkadaslar bugun dosyada okuma/yazma işlemi nasıl yapılır basitce onu göstericeğim.Text olur normal dosya olur network olur hatta database bile olablir okuyacağımız kaynak.
 Öncelikle Stream in ne oldugundan bahsedelim.Kaynak ve uygulama arasında bir bağlantı oluşturulur.Bunun üzerinden dosyaya veri yazar yada okuruz.İşte bunu streamler üzerinden yaparız.2 ye ayırabiliriz JAVA da dosya okumayı.(Bunlar birer interfacedir.Javadaki herşey birer interface aslinda)

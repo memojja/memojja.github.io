@@ -5,7 +5,7 @@ date:   2015-11-17 16:16:01 -0600
 categories: Java
 tags: Java
 ---
-![](../../images/thread.jpg)
+![](../../images/thread.jpg){: .resiim }
 
 Merhaba arkadaslar bugun **thread**lerden bahsedecegim.Threadler bir program içerisinde **birden fazla işlem**in gerçekleştirilmesini saglar.Yazdıgımız programlarda nasıl main methodu varsa threadlerde de main thread vardır ilk çalışır ve en son biter.Main thread durduruldugu zaman bütün threadler durdurulur.
 
