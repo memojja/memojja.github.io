@@ -77,16 +77,6 @@
               </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <img style="width:28px;height:28px;margin:0px;" src="../../images/favicons/mstile-144x144.png"  />
-                  <span class="label">CV</span>
-                </a>
-              </li>
-            {% endif %}
-
             <!-- RSS -->
             <li class="navigation__item">
               <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
@@ -94,6 +84,16 @@
                 <span class="label">RSS</span>
               </a>
             </li>
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="http://www.arimehmet.com/cv.pdf" target="_blank">
+                  <img style="width:24px;height:24px;padding-top: 2px;" src="../../images/favicons/mstile-144x144.png"  />
+                  <span class="label">CV</span>
+                </a>
+              </li>
+            {% endif %}
 
             </ul>
           </nav>
