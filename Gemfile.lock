@@ -196,7 +196,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-seo-tag
   jemoji
 
 BUNDLED WITH
-   1.13.7
+   1.14.3
