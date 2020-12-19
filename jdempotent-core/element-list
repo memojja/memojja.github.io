@@ -1,0 +1,8 @@
+com.trendyol.jdempotent.core.annotation
+com.trendyol.jdempotent.core.aspect
+com.trendyol.jdempotent.core.callback
+com.trendyol.jdempotent.core.config
+com.trendyol.jdempotent.core.constant
+com.trendyol.jdempotent.core.datasource
+com.trendyol.jdempotent.core.generator
+com.trendyol.jdempotent.core.model
